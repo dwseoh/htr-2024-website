@@ -42,7 +42,17 @@ function Member({ name, icon }) {
 }
 
 const Members = [
-  <Member name="Max Childerhose" icon="https://picsum.photos/400" />,
+
+  <Member name="Max Childerhose" icon="https://cdn.discordapp.com/avatars/413346829632274438/b997fe04f1e8b8137954e698278a15bd.webp" />,
+  <Member name="Vincent Sun" icon="https://cdn.discordapp.com/avatars/489981670276202497/be614f3766f0aa4b934bb9807b3fceff.webp" />,
+  <Member name="Angela Tang" icon="https://cdn.discordapp.com/avatars/543628015662530580/6b307d58040ed971aafab1037c00264f.webp" />,
+  <Member name="Steven Rowe" icon="https://cdn.discordapp.com/avatars/506206911327109122/fe4d5b8a7c00270eb43ab6241bd8b105.webp" />,
+  <Member name="Garrett Liu" icon="https://cdn.discordapp.com/avatars/250661040130490378/64a0762e9db754ec1958fead412b84cf.webp" />,
+  <Member name="Aidan Huang" icon="https://cdn.discordapp.com/avatars/236091348304920576/8ca0c20bb359412681dd16d06b317436.webp" />,
+  <Member name="Winston Zhang" icon="https://cdn.discordapp.com/avatars/506988084894892037/1e2069b60914b190d15278d64995c0a5.webp" />,
+  <Member name="Vivaan Chugh" icon="https://cdn.discordapp.com/avatars/444566969081921536/68bd25267bb586dac83a3f40a9e16013.webp" />,
+  <Member name="Aditya Sen" icon="https://cdn.discordapp.com/avatars/369496769408532480/494f1204b1a75896d4a412f1a8170d6c.webp" />,
+
 ].map((member, i) => {
   return (
     <div className={`member${i}`}>

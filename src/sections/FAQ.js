@@ -99,31 +99,23 @@ const FAQ = () => {
           </Question>
           <Question>
             {{
-              question:
-                "Can you tell me more about Hack the Ridge's virtual approach?",
-              answer:
-                "HTR will be operating 100% virtually this year, meaning all video communication between the staff and members will be done through Google Meet. Workshops hosted by our volunteers and sponsors will be held virtually through Google Meet or Zoom. During the hackathon, you must find a way to communicate and collaborate with your team: you could choose to meet up in person to work, or meet virtually.",
-            }}
-          </Question>
-          <Question>
-            {{
               question: "What are the prizes for winning?",
               answer:
-                "Our current prize pool is worth $1000+, and is expected to grow. Winnings will be distributed through gift cards and swag. There will be two winners per stream: first place winner and runner up.",
+                "Our current prize pool is worth $200+, and is expected to grow. Winnings will be distributed through gift cards and swag. There will be two winners per stream: first place winner and runner up.",
             }}
           </Question>
           <Question>
             {{
               question: "Who can register?",
               answer:
-                "Our hackathon intended for students in HDSB, however you can join if you're outside of Halton. Must be a high school student!",
+                "Our hackathon intended for students no matter what grade or school!!",
             }}
           </Question>
           <Question>
             {{
               question: "What's the theme for Hack The Ridge?",
               answer:
-                "This year, there is no set theme or sector. What you decide to focus your efforts on is completely up to you (as long as it's appropriate of course).",
+                "The theme will be relased the day of the hacaton",
             }}
           </Question>
         </Accordion>

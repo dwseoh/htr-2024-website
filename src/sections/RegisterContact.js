@@ -73,7 +73,7 @@ const RegisterContact = (args) => {
           />
           <Icon
             text="Join our discord server"
-            url="https://discord.gg/mcwPcf8QUa"
+            url="https://discord.gg/NWfVkvygHV"
             network="discord"
           />
           <Icon text="devpost: coming soon!" url={null} network="rss" />
