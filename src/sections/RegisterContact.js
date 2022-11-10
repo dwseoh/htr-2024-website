@@ -58,7 +58,7 @@ const RegisterContact = (args) => {
         <VStack direction="row" w="full" pt="16" alignItems="flex-start">
           <Icon
             text="register here!"
-            url="https://docs.google.com/forms/d/1r8_S_RepQEqpBaR2SHO2B7iBX1AmAPgGZAg4JyorVmM/edit?usp=sharing"
+            url="https://organize.mlh.io/participants/events/8659-hack-the-ridge"
             network="sharethis"
           />
           <Icon
