@@ -52,7 +52,7 @@ const Members = [
   />,
   <Member
     name="Angela Tang"
-    icon="https://cdn.discordapp.com/avatars/543628015662530580/9235ea2aa7cc67968d54fd1422d9529e.webp"
+    icon="https://cdn.discordapp.com/attachments/1005951424879931407/1040482326188146748/fat_cat.jpg"
   />,
   <Member
     name="Steven Rowe"
