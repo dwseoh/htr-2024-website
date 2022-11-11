@@ -19,7 +19,7 @@ const AboutText = () => {
     >
       Hack The Ridge is Iroquois Ridge High School’s annual hackathon and pitch
       competition where students collaborate to come up with solutions to
-      real-world problems. The event is taking place virtually, on Saturday,
+      real-world problems. The event is taking place in person, on Saturday,
       December 10th, 2022, from 9 AM to 9 PM. Workshops and guest speakers will
       be helping participants to expand their skill sets, which can not only be
       applied during the event but also onwards. During the event, participants
