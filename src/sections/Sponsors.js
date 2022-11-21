@@ -46,6 +46,12 @@ const sponsors = [
     icon="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Metro_Inc._logo.svg/2560px-Metro_Inc._logo.svg.png"
     link="https://www.metro.ca/en"
   />,
+  <Sponsor
+    key="a"
+    name="replit"
+    icon="https://blog.replit.com/images/logo.png"
+    link="https://replit.com/"
+  />,
 ].map((sponsor, i) => {
   return (
     <div className={`sponsor${i}`} key={i}>
