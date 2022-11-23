@@ -32,12 +32,14 @@ const Question = (args) => {
         justifyContent="space-between"
       >
         <Flex pt="5" pb="5">
-          <Heading fontSize={{base: '1rem', lg: "1.5rem"}}>{args.question}</Heading>
+          <Heading fontSize={{ base: "1rem", lg: "1.5rem" }}>
+            {args.question}
+          </Heading>
         </Flex>
         <AccordionIcon />
       </AccordionButton>
       <AccordionPanel pt="5" pb="5">
-        <Text fontSize={{base: '0.85rem', lg: "1rem"}}>{args.answer}</Text>
+        <Text fontSize={{ base: "0.85rem", lg: "1rem" }}>{args.answer}</Text>
       </AccordionPanel>
     </AccordionItem>
   );
@@ -71,23 +73,27 @@ const FAQ = () => {
 
   return (
     <SimpleGrid
-      mt={{base: '50', lg: "24"}}
+      mt={{ base: "50", lg: "24" }}
       w="full"
       templateColumns={{ sm: "1fr", lg: "1fr 10fr", "2xl": "2fr 3fr" }}
       spacing={20}
     >
       <VStack alignSelf="center">
-        <Heading fontSize={{base: '4rem', lg: "10rem"}} mb={{lg: "5"}} className="faqHeading">
+        <Heading
+          fontSize={{ base: "4rem", lg: "10rem" }}
+          mb={{ lg: "5" }}
+          className="faqHeading"
+        >
           FAQ
         </Heading>
       </VStack>
       <div alignSelf="center" className="faqInfo">
-        <Accordion allowToggle allowMultiple mb={{base: '5', sm: '0'}}>
+        <Accordion allowToggle allowMultiple mb={{ base: "5", sm: "0" }}>
           <Question>
             {{
               question: "Do I need prior coding experience to participate?",
               answer:
-                "There is no experience required to participate! You will have the opportunity to learn through our workshops or participate in our business stream.",
+                "There is no experience required to participate! You will have the opportunity to learn through our workshops! ",
             }}
           </Question>
           <Question>
@@ -101,7 +107,7 @@ const FAQ = () => {
             {{
               question: "What are the prizes for winning?",
               answer:
-                "Our current prize pool is worth $200+, and is expected to grow. Winnings will be distributed through gift cards and swag. There will be two winners per stream: first place winner and runner up.",
+                "Our current prize pool is worth $200+, and is expected to grow. Winnings will be distributed through gift cards and swag. There will be two winners: first place winner and runner up.",
             }}
           </Question>
           <Question>
@@ -114,8 +120,7 @@ const FAQ = () => {
           <Question>
             {{
               question: "What's the theme for Hack The Ridge?",
-              answer:
-                "The theme will be relased the day of the hacaton",
+              answer: "The theme will be relased the day of the hacaton",
             }}
           </Question>
         </Accordion>

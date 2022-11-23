@@ -24,11 +24,11 @@ const AboutText = () => {
       be helping participants to expand their skill sets, which can not only be
       applied during the event but also onwards. During the event, participants
       will form teams of up to four people (though forming a team is not
-      mandatory) and {" "}
+      mandatory) and{" "}
       <b>
         {" "}
-        come up with a creative technological solution to any real-world problem
-        of your choice{" "}
+        come up with a creative technological solution to a problem related to
+        our theme{" "}
       </b>
     </Thin>
   );
