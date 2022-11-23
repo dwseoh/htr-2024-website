@@ -52,8 +52,8 @@ const Home = () => {
         <Schedule id="schedule" />
         <Divide />
         <FAQ />
-        {/* <Divide /> */}
-        {/* <Sponsors id="sponsors" />  */}
+        <Divide />
+        <Sponsors id="sponsors" />
         <Divide />
         <Team id="team" />
         <Divide />
