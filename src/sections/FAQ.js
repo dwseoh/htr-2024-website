@@ -120,7 +120,7 @@ const FAQ = () => {
           <Question>
             {{
               question: "What's the theme for Hack The Ridge?",
-              answer: "The theme will be relased the day of the hacaton",
+              answer: "The theme will be released the day of the hackathon",
             }}
           </Question>
         </Accordion>
