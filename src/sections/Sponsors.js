@@ -52,6 +52,30 @@ const sponsors = [
     icon="https://blog.replit.com/images/logo.png"
     link="https://replit.com/"
   />,
+  <Sponsor
+    key="a"
+    name="DQ"
+    icon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Dairy_Queen_logo.svg/1200px-Dairy_Queen_logo.svg.png"
+    link="https://www.dairyqueen.com/en-ca/"
+  />,
+  <Sponsor
+    key="a"
+    name="Marble Slab Creamery"
+    icon="src/img/marvle slab creamery logo.png"
+    link="https://www.marbleslab.ca/"
+  />,
+  <Sponsor
+    key="a"
+    name="KFC"
+    icon="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/KFC_Logo.svg/2560px-KFC_Logo.svg.png"
+    link="https://www.kfc.ca/"
+  />,
+  <Sponsor
+    key="a"
+    name="Foodies curry & shawarma"
+    icon="https://i0.wp.com/foodiescns.ca/wp-content/uploads/2022/05/color-1.png?fit=500%2C132&ssl=1"
+    link="https://foodiescns.ca/"
+  />,
 ].map((sponsor, i) => {
   return (
     <div className={`sponsor${i}`} key={i}>
