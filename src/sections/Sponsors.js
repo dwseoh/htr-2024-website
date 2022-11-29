@@ -61,7 +61,7 @@ const sponsors = [
   <Sponsor
     key="a"
     name="Marble Slab Creamery"
-    icon="src/img/marvle slab creamery logo.png"
+    icon="src/img/marble slab creamery logo.png"
     link="https://www.marbleslab.ca/"
   />,
   <Sponsor
