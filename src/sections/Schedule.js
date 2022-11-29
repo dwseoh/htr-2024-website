@@ -23,9 +23,9 @@ const Times = [
   <Time time="9:00 - 9:30" name="Opening Ceremony" />,
   <Time time="9:30 - 10:00" name="Team Finder Session" />,
   <Time time="10:00 - 11:00" name="Workshop #1 - Introduction to Python" />,
-  <Time time="11:00 - 12:00" name="Workshop #2 - TBD" />,
+  <Time time="11:00 - 12:00" name="Workshop #2 - Postman" />,
   <Time time="12:00 - 1:00" name="Lunch Break" />,
-  <Time time="1:00 - 2:00" name="Workshop #3 - TBD" />,
+  <Time time="1:00 - 2:00" name="Workshop #3 - Into to HTML" />,
   <Time time="2:00 - 3:00" name="Fun Event" />,
   <Time
     time="3:00 - 4:00"

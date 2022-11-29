@@ -61,7 +61,7 @@ const sponsors = [
   <Sponsor
     key="a"
     name="Marble Slab Creamery"
-    icon="src/img/marble slab creamery logo.png"
+    icon="https://cdn.discordapp.com/attachments/933210665882091553/1046978763285614684/marble_slab_creamery_logo.png"
     link="https://www.marbleslab.ca/"
   />,
   <Sponsor
@@ -75,6 +75,18 @@ const sponsors = [
     name="Foodies curry & shawarma"
     icon="https://i0.wp.com/foodiescns.ca/wp-content/uploads/2022/05/color-1.png?fit=500%2C132&ssl=1"
     link="https://foodiescns.ca/"
+  />,
+  <Sponsor
+    key="a"
+    name="Harveys"
+    icon="https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/Harvey%27s_logo.svg/1200px-Harvey%27s_logo.svg.png"
+    link="https://www.harveys.ca/en.html"
+  />,
+  <Sponsor
+    key="a"
+    name="Gotcha Bubble Tea"
+    icon="https://www.gotchafreshtea.com/uploads/1/2/3/7/123755766/gotcha-2018-logo-gotcha-eng_1.png"
+    link="https://gotcha-bubble-tea.business.site/"
   />,
 ].map((sponsor, i) => {
   return (
