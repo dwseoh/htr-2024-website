@@ -88,6 +88,12 @@ const sponsors = [
     icon="https://www.gotchafreshtea.com/uploads/1/2/3/7/123755766/gotcha-2018-logo-gotcha-eng_1.png"
     link="https://gotcha-bubble-tea.business.site/"
   />,
+  <Sponsor
+    key="a"
+    name="Code Club"
+    icon="https://cdn.discordapp.com/attachments/1005951424879931407/1050449083174764574/unknown-removebg-preview.png"
+    link="https://codeclub.org/en/"
+  />,
 ].map((sponsor, i) => {
   return (
     <div className={`sponsor${i}`} key={i}>
