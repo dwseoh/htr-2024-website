@@ -26,16 +26,19 @@ const Times = [
   <Time time="11:00 - 12:00" name="Workshop #2 - Postman" />,
   <Time time="12:00 - 1:00" name="Lunch Break" />,
   <Time time="1:00 - 2:00" name="Workshop #3 - Into to HTML" />,
-  <Time time="2:00 - 3:00" name="Fun Event" />,
+  <Time time="2:00 - 3:00" name="Fun Event - Paper Airplane Contest" />,
+  <Time time="2:15 - 3:00" name="Fun Event - Amoung Us/Mafia Game" />,
   <Time
     time="3:00 - 4:00"
-    name="Workshop #4 - Intro to Web Development With Flask"
+    name="Workshop #4 - Rest Api and Node.js"
   />,
   <Time
     time="4:00 - 5:00"
-    name="Workshop #5 - Intro to Game Dev with pygame"
+    name="Workshop #5 - Microbits Workshop"
   />,
-  <Time time="5:00 - 7:45" name="No activities planned - wrap up coding!" />,
+  <Time time="5:00 - 5:55" name="Fun Event - Costume Making" />,
+  <Time time="6:00" name="Fun Event - Budget costplay contest" />,
+  <Time time="6:00 - 7:45" name="No activities planned - wrap up coding!" />,
   <Time time="7:45" name="Project Deadline" />,
   <Time time="7:45 - 8:45" name="Judging" />,
   <Time time="8:45 - 9:15" name="Judge Deliberation" />,
