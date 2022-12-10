@@ -71,6 +71,10 @@ const Members = [
     icon="https://demonslayer.fr/wp-content/uploads/2021/09/Tanjiro.jpeg"
   />,
   <Member
+    name="Vivaan Chugh"
+    icon="https://cdn.discordapp.com/avatars/444566969081921536/68bd25267bb586dac83a3f40a9e16013.webp"
+  />,
+  <Member
     name="Garrett Liu"
     icon="https://cdn.discordapp.com/avatars/250661040130490378/64a0762e9db754ec1958fead412b84cf.webp"
   />,
@@ -82,11 +86,6 @@ const Members = [
     name="Winston Zhang"
     icon="https://cdn.discordapp.com/avatars/506988084894892037/1e2069b60914b190d15278d64995c0a5.webp"
   />,
-  <Member
-    name="Vivaan Chugh"
-    icon="https://cdn.discordapp.com/avatars/444566969081921536/68bd25267bb586dac83a3f40a9e16013.webp"
-  />,
- 
 ].map((member, i) => {
   return (
     <div className={`member${i}`}>
