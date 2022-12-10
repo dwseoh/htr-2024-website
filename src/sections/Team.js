@@ -59,6 +59,18 @@ const Members = [
     icon="https://cdn.discordapp.com/attachments/1005951424879931407/1039158102441861140/Bismuth_Crystal.PNG"
   />,
   <Member
+  name="Aditya Sen"
+  icon="https://animecorner.me/wp-content/uploads/2022/09/demon-slayer-zenitsu.jpg"
+  />,
+  <Member
+    name="Sebastian Sperneac"
+    icon="https://qph.cf2.quoracdn.net/main-qimg-eae9ace85503930493783979172c8cb8-lq"
+  />,
+  <Member
+    name="Raweeha Raza"
+    icon="https://demonslayer.fr/wp-content/uploads/2021/09/Tanjiro.jpeg"
+  />,
+  <Member
     name="Garrett Liu"
     icon="https://cdn.discordapp.com/avatars/250661040130490378/64a0762e9db754ec1958fead412b84cf.webp"
   />,
@@ -74,10 +86,7 @@ const Members = [
     name="Vivaan Chugh"
     icon="https://cdn.discordapp.com/avatars/444566969081921536/68bd25267bb586dac83a3f40a9e16013.webp"
   />,
-  <Member
-    name="Aditya Sen"
-    icon="https://cdn.discordapp.com/avatars/369496769408532480/494f1204b1a75896d4a412f1a8170d6c.webp"
-  />,
+ 
 ].map((member, i) => {
   return (
     <div className={`member${i}`}>
