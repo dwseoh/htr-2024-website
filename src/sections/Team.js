@@ -43,47 +43,47 @@ function Member({ name, icon }) {
 
 const Members = [
   <Member
-    name="Max Childerhose"
+    name="Aidan Zhang"
     icon="https://cdn.discordapp.com/avatars/413346829632274438/b997fe04f1e8b8137954e698278a15bd.webp"
   />,
   <Member
-    name="Vincent Sun"
+    name="Vivaan Chugh"
     icon="https://cdn.discordapp.com/avatars/489981670276202497/be614f3766f0aa4b934bb9807b3fceff.webp"
   />,
   <Member
-    name="Angela Tang"
+    name="Ethan Luc"
     icon="https://cdn.discordapp.com/attachments/1005951424879931407/1040482326188146748/fat_cat.jpg"
   />,
   <Member
-    name="Steven Rowe"
+    name="Aidan Tran"
     icon="https://cdn.discordapp.com/attachments/1005951424879931407/1039158102441861140/Bismuth_Crystal.PNG"
   />,
   <Member
-  name="Aditya Sen"
+  name="Rachael Ni"
   icon="https://animecorner.me/wp-content/uploads/2022/09/demon-slayer-zenitsu.jpg"
   />,
   <Member
-    name="Sebastian Sperneac"
+    name="David Xu"
     icon="https://qph.cf2.quoracdn.net/main-qimg-eae9ace85503930493783979172c8cb8-lq"
   />,
   <Member
-    name="Raweeha Raza"
+    name="Ayushi Salwan"
     icon="https://demonslayer.fr/wp-content/uploads/2021/09/Tanjiro.jpeg"
   />,
   <Member
-    name="Vivaan Chugh"
+    name="Aashi Chaubey"
     icon="https://cdn.discordapp.com/avatars/444566969081921536/68bd25267bb586dac83a3f40a9e16013.webp"
   />,
   <Member
-    name="Garrett Liu"
+    name="Evan Liu"
     icon="https://cdn.discordapp.com/avatars/250661040130490378/64a0762e9db754ec1958fead412b84cf.webp"
   />,
   <Member
-    name="Aidan Huang"
+    name="Lawrence Zou"
     icon="https://cdn.discordapp.com/avatars/236091348304920576/8ca0c20bb359412681dd16d06b317436.webp"
   />,
   <Member
-    name="Winston Zhang"
+    name="Sid Donaldson"
     icon="https://cdn.discordapp.com/avatars/506988084894892037/1e2069b60914b190d15278d64995c0a5.webp"
   />,
 ].map((member, i) => {
