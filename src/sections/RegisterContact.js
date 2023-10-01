@@ -63,7 +63,7 @@ const RegisterContact = (args) => {
           />
           <Icon
             text="hacktheridge23@gmail.com"
-            url="mailto:hacktheridge@gmail.com"
+            url="mailto:hacktheridge23@gmail.com"
             network="mailto"
           />
           <Icon
