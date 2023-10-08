@@ -67,10 +67,6 @@ const Members = [
     icon="https://qph.cf2.quoracdn.net/main-qimg-eae9ace85503930493783979172c8cb8-lq"
   />,
   <Member
-      name = "Aidan Tran"
-      icon = ""
-  />,
-  <Member
     name="Ayushi Salwan"
     icon="https://demonslayer.fr/wp-content/uploads/2021/09/Tanjiro.jpeg"
   />,
