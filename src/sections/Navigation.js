@@ -11,15 +11,7 @@ const Navigation = () => {
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
-    <Flex w="full" mt={10} justifyContent="flex-end">
-        // <Box pl={10}>
-        //   <img 
-        //   src = {logo.src} 
-        //   alt = 'logo'  
-        //   style = {{"object-fit": "cover", "width": "10%", "border-radius": "25px"}} 
-        //   />
-        // </Box>
-                   
+    <Flex w="full" mt={10} justifyContent="flex-end">     
       <HStack spacing={59} pr={59} display={{ base: "none", lg: "flex" }}>
         <Heading as="a" href="#about" fontSize="lg">
           About
