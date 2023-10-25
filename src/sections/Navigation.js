@@ -12,13 +12,13 @@ const Navigation = () => {
 
   return (
     <Flex w="full" mt={10} justifyContent="flex-end">
-        <Box pl={10}>
-          <img 
-          src = {logo.src} 
-          alt = 'logo'  
-          style = {{"object-fit": "cover", "width": "10%", "border-radius": "25px"}} 
-          />
-        </Box>
+        // <Box pl={10}>
+        //   <img 
+        //   src = {logo.src} 
+        //   alt = 'logo'  
+        //   style = {{"object-fit": "cover", "width": "10%", "border-radius": "25px"}} 
+        //   />
+        // </Box>
                    
       <HStack spacing={59} pr={59} display={{ base: "none", lg: "flex" }}>
         <Heading as="a" href="#about" fontSize="lg">
