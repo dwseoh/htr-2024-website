@@ -20,23 +20,6 @@ const Time = ({ time, name }) => {
   );
 };
 const Times = [
-  <Time time="9:00 - 9:30" name="Opening Ceremony" />,
-  <Time time="9:30 - 10:00" name="Team Finder Session" />,
-  <Time time="10:00 - 11:00" name="Workshop #1 - Introduction to Python" />,
-  <Time time="11:00 - 12:00" name="Workshop #2 - Postman" />,
-  <Time time="12:00 - 1:00" name="Lunch Break" />,
-  <Time time="1:00 - 2:00" name="Workshop #3 - Intro to HTML" />,
-  <Time time="2:00 - 3:00" name="Fun Event - Paper Airplane Contest" />,
-  <Time time="2:15 - 3:00" name="Fun Event - Among Us/Mafia Game" />,
-  <Time time="3:00 - 4:00" name="Workshop #4 - REST API's with Node.js" />,
-  <Time time="4:00 - 5:00" name="Workshop #5 - Micro-bits Workshop" />,
-  <Time time="5:00 - 5:55" name="Fun Event - Costume Making" />,
-  <Time time="6:00" name="Fun Event - Budget costplay contest" />,
-  <Time time="6:00 - 7:45" name="No activities planned - wrap up coding!" />,
-  <Time time="7:45" name="Project Deadline" />,
-  <Time time="7:45 - 8:45" name="Judging" />,
-  <Time time="8:45 - 9:15" name="Judge Deliberation" />,
-  <Time time="9:15 - 9:30" name="Results & Closing Ceremony" />,
 ];
 
 const Schedule = (args) => {
@@ -70,7 +53,7 @@ const Schedule = (args) => {
           Schedule
         </Heading>
         <Thin fontSize={{ base: "0.75rem", lg: "1rem" }}>
-          event activities, hour by hour
+          Schedule coming soon!
         </Thin>
       </div>
       <VStack mt="8">
