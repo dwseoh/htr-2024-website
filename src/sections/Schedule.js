@@ -12,9 +12,7 @@ const Time = ({ time, name }) => {
   return (
     <Flex justify="space-between" w={{ base: "90vw", lg: "75vw" }} p="7">
       <Heading fontSize={{ base: "md", lg: "2xl" }}>{time}</Heading>
-      <Text alignSelf="center" ml="2" mr="2">
-        /
-      </Text>
+      <Text alignSelf="center" ml="2" mr="2">  |  </Text>
       <Thin fontSize={{ base: "base", lg: "2xl" }}>{name}</Thin>
     </Flex>
   );
