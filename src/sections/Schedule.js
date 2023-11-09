@@ -9,6 +9,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const Time = ({ time, name }) => {
+  while (time.length < 19) { time += " "; }; //Trying to format it so the slashes that cut between time & name align in the centre
   return (
     <Flex justify="space-between" w={{ base: "90vw", lg: "75vw" }} p="7">
       <Heading fontSize={{ base: "md", lg: "2xl" }}>{time}</Heading>
