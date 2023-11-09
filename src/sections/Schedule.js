@@ -9,6 +9,10 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const Time = ({ time, name }) => {
+  /*Force time to 20 characters long, force name to like 40 characters long or something
+  If that doesn't work I forfeit my will to persist
+  "⠀" <- Blank space character to use
+  */
   return (
     <Flex justify="space-between" w={{ base: "90vw", lg: "75vw" }} p="7">
       <Heading fontSize={{ base: "md", lg: "2xl" }}>{time}</Heading>
