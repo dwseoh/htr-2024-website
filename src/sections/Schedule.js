@@ -24,7 +24,7 @@ const Times = [
   <Time time="7:00 PM" name="Dinner served"/>,
   <Time time="7:00 PM" name="Deadline for projects"/>,
   <Time time="7:00 PM - 8:45 PM" name="Presenting & Judging"/>,
-  <Time time="9:00 - 9:30" name="Awards & Closing ceremony"/>
+  <Time time="9:00 PM - 9:30 PM" name="Awards & Closing ceremony"/>
 ];
 
 const Schedule = (args) => {
