@@ -42,6 +42,12 @@ const sponsors = [
   // />,
   <Sponsor
     key="a"
+    name="Toronto Metropolitan University"
+    icon="https://cms.education.macleans.ca/wp-content/uploads/2022/10/toronto-metropolitan.png"
+    link="https://www.torontomu.ca/"
+  />,   
+  <Sponsor
+    key="a"
     name="Ontario Tech University"
     icon="https://files.catbox.moe/ofd9zg.png"
     link="https://ontariotechu.ca/"
@@ -97,7 +103,7 @@ const sponsors = [
   <Sponsor
     key="a"
     name="Adapsyn"
-    icon="https://files.catbox.moe/z9xy49.png"
+    icon="https://innovationfactory.ca/wp-content/uploads/2022/10/Adapsyn-Bioscience.jpg"
     link="https://www.adapsyn.com/"
   />,  
   <Sponsor
@@ -111,13 +117,7 @@ const sponsors = [
     name="Brock University"
     icon="https://upload.wikimedia.org/wikipedia/en/7/7f/BrockU_CoA.jpg"
     link="https://brocku.ca/"
-  />,
-  <Sponsor
-    key="a"
-    name="Toronto Metropolitan University"
-    icon="https://cms.education.macleans.ca/wp-content/uploads/2022/10/toronto-metropolitan.png"
-    link="https://www.torontomu.ca/"
-  />      
+  />
 ].map((sponsor, i) => {
   return (
     <div className={`sponsor${i}`} key={i}>
