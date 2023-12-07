@@ -27,7 +27,7 @@ const Times = [
   <Time time="9:15AM - 9:30AM" name="Team Finding Session (Theatre)"/>,
   <Time time="10:00AM - 11:00AM" name='“Introduction to Python” Workshop (Theatre)'/>,
   <Time time="10:30AM - 11:30AM" name='“Introduction to C” Workshop (Room TBD)'/>,
-  <Time time="11:00AM - 12:00PM" name='“Navigating University and Beyond” Workshop Theatre)'/>,
+  <Time time="11:00AM - 12:00PM" name='“Navigating University and Beyond” Workshop (Theatre)'/>,
   <Time time="12:00PM" name="Lunch Served in the Cafeteria"/>,
   <Time time="12:30PM - 1:30PM" name="League 1v1 Tourney (Room TBD)"/>,
   <Time time="1:00PM - 2:00PM" name="Karaoke (Theatre)"/>,
