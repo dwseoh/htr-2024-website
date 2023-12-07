@@ -44,7 +44,7 @@ function Member({ name, icon }) {
 const Members = [
   <Member
     name="Aidan Zhang"
-    icon="https://cdn.discordapp.com/avatars/413346829632274438/b997fe04f1e8b8137954e698278a15bd.webp"
+    icon="https://lh3.googleusercontent.com/a-/ALV-UjVddCcdIxGAiVvhEzMx-fU2vmPXmLnJg_nnD_8lJZm_ZdE=s128-p-k-rw-no"
   />,
   <Member
     name="Vivaan Chugh"
