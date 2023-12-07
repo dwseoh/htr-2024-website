@@ -111,7 +111,13 @@ const sponsors = [
     name="Brock University"
     icon="https://upload.wikimedia.org/wikipedia/en/7/7f/BrockU_CoA.jpg"
     link="https://brocku.ca/"
-  />
+  />,
+  <Sponsor
+    key="a"
+    name="Toronto Metropolitan University"
+    icon="https://cms.education.macleans.ca/wp-content/uploads/2022/10/toronto-metropolitan.png"
+    link="https://www.torontomu.ca/"
+  />      
 ].map((sponsor, i) => {
   return (
     <div className={`sponsor${i}`} key={i}>
