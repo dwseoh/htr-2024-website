@@ -115,7 +115,7 @@ const sponsors = [
   <Sponsor
     key="a"
     name="Brock University"
-    icon="https://upload.wikimedia.org/wikipedia/en/7/7f/BrockU_CoA.jpg"
+    icon="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Brock_University_Logo_2022.svg/2560px-Brock_University_Logo_2022.svg.png"
     link="https://brocku.ca/"
   />
 ].map((sponsor, i) => {
