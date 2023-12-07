@@ -22,13 +22,27 @@ const Time = ({ time, name }) => {
   );
 };
 const Times = [
-  <Time time="9:00 AM - 9:00 PM" name="Start to end of the event"/>,
-  <Time time="TBD" name="Various workshops & activities"/>,
-  <Time time="12:00 PM - 1:30 PM" name="Lunch prepared"/>,
-  <Time time="7:00 PM" name="Dinner served"/>,
-  <Time time="7:00 PM" name="Deadline for projects"/>,
-  <Time time="7:00 PM - 8:45 PM" name="Presenting & Judging"/>,
-  <Time time="9:00 PM - 9:30 PM" name="Awards & Closing ceremony"/>
+  <Time time="8:30AM - 9:00AM" name="Registration"/>
+  <Time time="9:00AM - 9:15AM" name="Opening Ceremony (Theatre)"/>
+  <Time time="9:15AM - 9:30AM" name="Team Finding Session (Theatre)"/>
+  <Time time="10:00AM - 11:00AM" name='“Introduction to Python” Workshop (Theatre)'/>
+  <Time time="10:30AM - 11:30AM" name='“Introduction to C” Workshop (Room TBD)'/>
+  <Time time="11:00AM - 12:00PM" name='“Navigating University and Beyond” Workshop Theatre)'/>
+  <Time time="12:00PM" name="Lunch Served in the Cafeteria"/>
+  <Time time="12:30PM - 1:30PM" name="League 1v1 Tourney (Room TBD)"/>
+  <Time time="1:00PM - 2:00PM" name="Karaoke (Theatre)"/>
+  <Time time="2:00PM - 3:00PM" name='"The Future Of Work” Workshop (Theatre)'/>
+  <Time time="2:30PM - 3:00PM" name="Chess tournament (Room TBD)"/>
+  <Time time="3:00PM - 4:00PM" name='“A Shallow Dive Into Machine Learning” Workshop (Theatre)'/>
+  <Time time="3:45PM - 4:00PM" name="Bubble Tea draw (Cafeteria)"/>
+  <Time time="4:00PM - 5:00PM" name="Figma Workshop (Theatre)"/>
+  <Time time="4:30PM - 5:00PM" name="Fitness Challenge (Gym)"/>
+  <Time time="5:00PM - 5:30PM" name="Math Contest (Room TBD)"/>
+  <Time time="5:30PM" name="Dinner Served in the Cafeteria"/>
+  <Time time="7:00PM" name="Deadline for Submissions"/>
+  <Time time="7:00PM - 8:30PM" name="Judging (Rooms TBD)"/>
+  <Time time="8:30PM - 9:00PM" name="Deliberation"/>
+  <Time time="9:00PM" name="Closing Ceremony & Awards"/>
 ];
 
 const Schedule = (args) => {
