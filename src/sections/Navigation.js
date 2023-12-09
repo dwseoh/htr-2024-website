@@ -16,8 +16,8 @@ const Navigation = () => {
         <Heading as="a" href="#about" fontSize="lg">
           About
         </Heading>
-        <Heading as="a" href="#streams" fontSize="lg">
-          Streams
+        <Heading as="a" href="https://hack-the-ridge-2023.devpost.com/?ref_feature=challenge&ref_medium=discover" fontSize="lg">
+          DevPost
         </Heading>
         <Heading as="a" href="#schedule" fontSize="lg">
           Schedule
