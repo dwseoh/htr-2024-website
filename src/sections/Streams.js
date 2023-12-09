@@ -87,7 +87,7 @@ const Streams = (args) => {
           fontSize={{ base: "1.25rem", lg: "3rem" }}
           mb={{ base: "4", lg: "6" }}
         >
-          Streams
+          Streams_
         </Heading>
         <Thin fontSize={{ base: "0.75rem", lg: "1rem" }}>
           the competitions you can join
