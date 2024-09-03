@@ -44,47 +44,47 @@ function Member({ name, icon }) {
 const Members = [
   <Member
     name="Jamie Seoh"
-    icon="img/jamie.webp"
+    icon="./img/jamie.webp"
   />,
   <Member
     name="Eric Yang"
-    icon="img/eric.webp"
+    icon="./img/eric.webp"
   />,
   <Member
     name="Sebastian Barsan"
-    icon="img/sebastian.webp"
+    icon="./img/sebastian.webp"
   />,
   <Member
     name="Matthew Yang"
-    icon="img/matthew.webp"
+    icon="./img/matthew.webp"
   />,
   <Member
     name="Michelle Wang"
-    icon="img/michelle.webp"
+    icon="./img/michelle.webp"
   />,
   <Member
     name="Mythili Panicker"
-    icon="img/mythili.webp"
+    icon="./img/mythili.webp"
   />,
   <Member
     name="Aahan Ghode"
-    icon="img/aahan.webp"
+    icon="./img/aahan.webp"
   />,
   <Member
     name="Luqman Bhatti"
-    icon="img/luqman.webp"
+    icon="./img/luqman.webp"
   />,
   <Member
     name="Joshua Zhang"
-    icon="img/joshua.webp"
+    icon="./img/joshua.webp"
   />,
   <Member
     name="Gavin You"
-    icon="img/gavin.webp"
+    icon="./img/gavin.webp"
   />,
   <Member
     name="Sid Donaldson"
-    icon="img/sid.webp"
+    icon="./img/sid.webp"
   />,
 ].map((member, i) => {
   return (
