@@ -38,7 +38,6 @@ function Member({ name, icon }) {
         {name}
       </Heading>
       <Box boxSize="100px">
-        {console.log(icon)}
         <Image
           src={icon}
           w="100px"
