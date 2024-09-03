@@ -62,8 +62,8 @@ const RegisterContact = (args) => {
             network="sharethis"
           />
           <Icon
-            text="hacktheridge23@gmail.com"
-            url="mailto:hacktheridge23@gmail.com"
+            text="hacktheridge24@gmail.com"
+            url="mailto:hacktheridge24@gmail.com"
             network="mailto"
           />
           <Icon
