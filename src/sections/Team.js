@@ -44,47 +44,47 @@ function Member({ name, icon }) {
 const Members = [
   <Member
     name="Jamie Seoh"
-    icon=""
+    icon="img/jamie.webp"
   />,
   <Member
     name="Eric Yang"
-    icon=""
+    icon="img/eric.webp"
   />,
   <Member
     name="Sebastian Barsan"
-    icon=""
+    icon="img/sebastian.webp"
   />,
   <Member
     name="Matthew Yang"
-    icon=""
+    icon="img/matthew.webp"
   />,
   <Member
     name="Michelle Wang"
-    icon=""
+    icon="img/michelle.webp"
   />,
   <Member
     name="Mythili Panicker"
-    icon=""
+    icon="img/mythili.webp"
   />,
   <Member
     name="Aahan Ghode"
-    icon=""
+    icon="img/aahan.webp"
   />,
   <Member
     name="Luqman Bhatti"
-    icon=""
+    icon="img/luqman.webp"
   />,
   <Member
     name="Joshua Zhang"
-    icon=""
+    icon="img/joshua.webp"
   />,
   <Member
     name="Gavin You"
-    icon=""
+    icon="img/gavin.webp"
   />,
   <Member
     name="Sid Donaldson"
-    icon="https://cdn.discordapp.com/avatars/506988084894892037/1e2069b60914b190d15278d64995c0a5.webp"
+    icon="img/sid.webp"
   />,
 ].map((member, i) => {
   return (
