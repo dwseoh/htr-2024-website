@@ -110,7 +110,7 @@ const Team = (args) => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".memberGrid",
-        start: "top top",
+        start: "top bottom",
       },
       delay: 0,
     });
@@ -123,12 +123,12 @@ const Team = (args) => {
         tl.from(`.member${i}`, {
           x: -50 + -50 * c,
           opacity: 0,
-        });
+        }, i * 0.2);
       } else {
         tl.from(`.member${i}`, {
           x: 50 + 50 * c,
           opacity: 0,
-        });
+        }, i * 0.2);
       }
     }
   });
