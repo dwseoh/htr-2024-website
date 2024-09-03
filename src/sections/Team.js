@@ -3,7 +3,6 @@ import { useColorModeValue } from "@chakra-ui/color-mode";
 import { Image, Img } from "@chakra-ui/image";
 import { Box, Flex, Heading, SimpleGrid, VStack } from "@chakra-ui/layout";
 import Thin from "./helpers";
-import shayaan from "./img/shayaan.jpg";
 
 import { useEffect } from "react";
 import gsap from "gsap";
