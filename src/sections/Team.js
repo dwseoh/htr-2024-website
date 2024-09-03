@@ -59,10 +59,6 @@ const Members = [
     icon=""
   />,
   <Member
-    name="Sebastian Barsan"
-    icon=""
-  />,
-  <Member
     name="Michelle Wang"
     icon=""
   />,
