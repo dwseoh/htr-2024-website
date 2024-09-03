@@ -43,44 +43,48 @@ function Member({ name, icon }) {
 
 const Members = [
   <Member
-    name="Aidan Zhang"
-    icon="https://lh3.googleusercontent.com/a-/ALV-UjVddCcdIxGAiVvhEzMx-fU2vmPXmLnJg_nnD_8lJZm_ZdE=s128-p-k-rw-no"
+    name="Jamie Seoh"
+    icon=""
   />,
   <Member
-    name="Vivaan Chugh"
-    icon="https://cdn.discordapp.com/avatars/489981670276202497/be614f3766f0aa4b934bb9807b3fceff.webp"
+    name="Eric Yang"
+    icon=""
   />,
   <Member
-    name="Ethan Luc"
-    icon="https://cdn.discordapp.com/attachments/1005951424879931407/1040482326188146748/fat_cat.jpg"
+    name="Sebastian Barsan"
+    icon=""
   />,
   <Member
-    name="Aidan Tran"
-    icon="https://cdn.discordapp.com/attachments/1005951424879931407/1039158102441861140/Bismuth_Crystal.PNG"
+    name="Matthew Yang"
+    icon=""
   />,
   <Member
-  name="Rachael Ni"
-  icon="https://animecorner.me/wp-content/uploads/2022/09/demon-slayer-zenitsu.jpg"
+    name="Sebastian Barsan"
+    icon=""
   />,
   <Member
-    name="David Xu"
-    icon="https://qph.cf2.quoracdn.net/main-qimg-eae9ace85503930493783979172c8cb8-lq"
+    name="Michelle Wang"
+    icon=""
   />,
   <Member
-    name="Ayushi Salwan"
-    icon="https://demonslayer.fr/wp-content/uploads/2021/09/Tanjiro.jpeg"
+    name="Mythili Panicker"
+    icon=""
   />,
   <Member
-    name="Aashi Chaubey"
-    icon="https://cdn.discordapp.com/avatars/444566969081921536/68bd25267bb586dac83a3f40a9e16013.webp"
+    name="Aahan Ghode"
+    icon=""
   />,
   <Member
-    name="Evan Liu"
-    icon="https://cdn.discordapp.com/avatars/250661040130490378/64a0762e9db754ec1958fead412b84cf.webp"
+    name="Luqman Bhatti"
+    icon=""
   />,
   <Member
-    name="Lawrence Zou"
-    icon="https://cdn.discordapp.com/avatars/236091348304920576/8ca0c20bb359412681dd16d06b317436.webp"
+    name="Joshua Zhang"
+    icon=""
+  />,
+  <Member
+    name="Gavin You"
+    icon=""
   />,
   <Member
     name="Sid Donaldson"
