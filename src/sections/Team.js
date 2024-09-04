@@ -4,6 +4,18 @@ import { Image, Img } from "@chakra-ui/image";
 import { Box, Flex, Heading, SimpleGrid, VStack } from "@chakra-ui/layout";
 import Thin from "./helpers";
 
+import jamie from "./img/jamie.webp";
+import eric from "./img/eric.webp";
+import sebastian from "./img/sebastian.webp";
+import matthew from "./img/matthew.webp";
+import michelle from "./img/michelle.webp";
+import mythili from "./img/mythili.webp";
+import aahan from "./img/aahan.webp";
+import luqman from "./img/luqman.webp";
+import joshua from "./img/joshua.webp";
+import gavin from "./img/gavin.webp";
+import sid from "./img/sid.webp";
+
 import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -26,7 +38,6 @@ function Member({ name, icon }) {
         {name}
       </Heading>
       <Box boxSize="100px">
-        {console.log(icon)}
         <Image
           src={icon}
           w="100px"
@@ -43,47 +54,47 @@ function Member({ name, icon }) {
 const Members = [
   <Member
     name="Jamie Seoh"
-    icon="./img/jamie.webp"
+    icon={jamie.src}
   />,
   <Member
     name="Eric Yang"
-    icon="./img/eric.webp"
+    icon={eric.src}
   />,
   <Member
     name="Sebastian Barsan"
-    icon="./img/sebastian.webp"
+    icon={sebastian.src}
   />,
   <Member
     name="Matthew Yang"
-    icon="./img/matthew.webp"
+    icon={matthew.src}
   />,
   <Member
     name="Michelle Wang"
-    icon="./img/michelle.webp"
+    icon={michelle.src}
   />,
   <Member
     name="Mythili Panicker"
-    icon="./img/mythili.webp"
+    icon={mythili.src}
   />,
   <Member
     name="Aahan Ghode"
-    icon="./img/aahan.webp"
+    icon={aahan.src}
   />,
   <Member
     name="Luqman Bhatti"
-    icon="./img/luqman.webp"
+    icon={luqman.src}
   />,
   <Member
     name="Joshua Zhang"
-    icon="./img/joshua.webp"
+    icon={joshua.src}
   />,
   <Member
     name="Gavin You"
-    icon="./img/gavin.webp"
+    icon={gavin.src}
   />,
   <Member
     name="Sid Donaldson"
-    icon="./img/sid.webp"
+    icon={sid.src}
   />,
 ].map((member, i) => {
   return (
@@ -98,7 +109,7 @@ const Team = (args) => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".memberGrid",
-        start: "top top",
+        start: "top bottom",
       },
       delay: 0,
     });
@@ -111,12 +122,12 @@ const Team = (args) => {
         tl.from(`.member${i}`, {
           x: -50 + -50 * c,
           opacity: 0,
-        });
+        }, i * 0.2);
       } else {
         tl.from(`.member${i}`, {
           x: 50 + 50 * c,
           opacity: 0,
-        });
+        }, i * 0.2);
       }
     }
   });

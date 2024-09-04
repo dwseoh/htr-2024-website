@@ -131,13 +131,13 @@ const Sponsors = (args) => {
     const tl = new gsap.timeline({
       scrollTrigger: {
         trigger: ".sponsorsHeading",
-        start: "bottom bottom",
+        start: "top bottom",
       },
       delay: 0.2,
     });
 
     for (let i = 0; i < sponsors.length; i++) {
-      tl.from(`.sponsor${i}`, { x: -50 - 50 * i, opacity: 0 });
+      tl.from(`.sponsor${i}`, { x: -50 - 50 * i, opacity: 0 }, i * 0.2);
     }
   });
 
