@@ -22,7 +22,7 @@ const Time = ({ time, name }) => {
   );
 };
 const Times = [
-  <Time time="TBD" name="Coming Soon!"/>
+  
 /*   <Time time="8:30AM - 9:00AM" name="Registration"/>,
   <Time time="9:00AM - 9:15AM" name="Opening Ceremony (Theatre)"/>,
   <Time time="9:15AM - 9:30AM" name="Team Finding Session (Theatre)"/>,
@@ -77,7 +77,7 @@ const Schedule = (args) => {
           Schedule
         </Heading>
         <Thin fontSize={{ base: "0.75rem", lg: "1rem" }}>
-          Schedule to be finalized
+          Schedule to be created
         </Thin>
       </div>
       <VStack mt="8">

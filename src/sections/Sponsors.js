@@ -40,7 +40,7 @@ const sponsors = [
   //   icon="https://static.mlh.io/brand-assets/logo/official/mlh-logo-color.png"
   //   link="https://mlh.io/"
   // />,
-  <Sponsor
+ /*  <Sponsor
     key="a"
     name="Toronto Metropolitan University"
     icon="https://cms.education.macleans.ca/wp-content/uploads/2022/10/toronto-metropolitan.png"
@@ -117,7 +117,7 @@ const sponsors = [
     name="Brock University"
     icon="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Brock_University_Logo_2022.svg/2560px-Brock_University_Logo_2022.svg.png"
     link="https://brocku.ca/"
-  />
+  /> */
 ].map((sponsor, i) => {
   return (
     <div className={`sponsor${i}`} key={i}>
@@ -154,7 +154,7 @@ const Sponsors = (args) => {
           Sponsors
         </Heading>
         <Thin fontSize={{ base: "0.75rem", lg: "1rem" }}>
-         Sponsor list coming soon!
+         Sponsor list coming soon for 2024 - 2025!
         </Thin>
       </div>
       <div className="sponsorsStack">
