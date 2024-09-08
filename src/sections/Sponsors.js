@@ -8,11 +8,13 @@ import {
 import { Flex, Box, VStack } from "@chakra-ui/react";
 import { Image } from "@chakra-ui/image";
 import { useColorModeValue } from "@chakra-ui/color-mode";
+import { Button } from "@chakra-ui/react";
 import Thin from "./helpers";
 
 import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { EmailIcon } from "@chakra-ui/icons";
 
 function Sponsor({ name, icon, link }) {
   return (
@@ -157,6 +159,9 @@ const Sponsors = (args) => {
          Sponsor list coming soon for 2024 - 2025!
         </Thin>
       </div>
+      <Button leftIcon={<EmailIcon />} outline className="sponsorButton" mt="10" size="lg">
+        <a href="mailto:hacktheridge24@gmail.com">Become a Sponsor</a>
+      </Button>
       <div className="sponsorsStack">
         <SimpleGrid
           p="10"
