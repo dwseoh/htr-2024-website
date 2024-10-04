@@ -34,25 +34,26 @@ function Sponsor({ name, icon, link }) {
     </Flex>
   );
 }
-var sponsors = [
-  ["Brock University", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Brock_University_Logo_2022.svg/2560px-Brock_University_Logo_2022.svg.pn", "https://broku.ca"]
-]
-for (let i = 0; i < sponsors.length; i++) {
-  sponsors[i] = <Sponsor
+const sponsors = [
+  // <Sponsor
+  //   key="a"
+  //   name="major league hacking"
+  //   icon="https://static.mlh.io/brand-assets/logo/official/mlh-logo-color.png"
+  //   link="https://mlh.io/"
+  // />,
+  <Sponsor
     key="a"
-    name=sponsor[0]
-    icon=sponsor[1]
-    link=sponsor[2]
-  />
-}
-sponsors = sponsors.map((sponsor, i) => {
+    name="<name>"
+    icon="<logo url>"
+    link="<url of sponsor>"
+  />,
+].map((sponsor, i) => {
   return (
     <div className={`sponsor${i}`} key={i}>
       {sponsor}
     </div>
   );
 });
-
 
 const Sponsors = (args) => {
   useEffect(() => {
