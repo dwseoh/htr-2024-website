@@ -34,99 +34,26 @@ function Sponsor({ name, icon, link }) {
     </Flex>
   );
 }
-
-const sponsors = [
-  // <Sponsor
-  //   key="a"
-  //   name="major league hacking"
-  //   icon="https://static.mlh.io/brand-assets/logo/official/mlh-logo-color.png"
-  //   link="https://mlh.io/"
-  // />,
- /*  <Sponsor
+var sponsors = [
+  ["Brock University", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Brock_University_Logo_2022.svg/2560px-Brock_University_Logo_2022.svg.pn", "https://broku.ca"]
+  ["name", "logo url", "url"]
+]
+for (let i = 0; i < sponsors.length; i++) {
+  sponsors[i] = <Sponsor
     key="a"
-    name="Toronto Metropolitan University"
-    icon="https://cms.education.macleans.ca/wp-content/uploads/2022/10/toronto-metropolitan.png"
-    link="https://www.torontomu.ca/"
-  />,   
-  <Sponsor
-    key="a"
-    name="Ontario Tech University"
-    icon="https://files.catbox.moe/ofd9zg.png"
-    link="https://ontariotechu.ca/"
-  />,
-  <Sponsor
-    key="a"
-    name="Bruce Power"
-    icon="https://files.catbox.moe/iz51ys.png"
-    link="http://www.brucepower.com/"
-  />,
-  <Sponsor
-    key="a"
-    name="Siemens"
-    icon="https://files.catbox.moe/des2np.png"
-    link="https://www.siemens.com/"
-  />,
-  <Sponsor
-    key="a"
-    name="The University of Waterloo"
-    icon="https://files.catbox.moe/pnmpv4.png"
-    link="https://uwaterloo.ca/"
-  />,
-  <Sponsor
-    key="a"
-    name="Evertz Microsystems"
-    icon="https://evertz.com/img/evertz/evertz.logo.svg"
-    link="https://evertz.com/"
-  />,
-  <Sponsor
-    key="a"
-    name="Deloitte"
-    icon="https://www2.deloitte.com/content/dam/assets/logos/deloitte.svg"
-    link="https://www2.deloitte.com/ca/en/pages/about-deloitte/articles/home.html"
-  />,
-  <Sponsor
-    key="a"
-    name="Interview Cake"
-    icon="https://assets-global.website-files.com/62e051559bac913234470995/63da686f8720100e177b4f40_Interview%20Cake%20main-p-800.webp"
-    link="https://www.interviewcake.com/"
-  />,
-  <Sponsor
-    key="a"
-    name="McMaster University"
-    icon="https://files.catbox.moe/1p76xa.png"
-    link="https://www.mcmaster.ca/"
-  />,
-  <Sponsor
-    key="a"
-    name="Weever Apps"
-    icon="https://files.catbox.moe/70lru2.png"
-    link="https://weeverapps.com/"
-  />,  
-  <Sponsor
-    key="a"
-    name="Adapsyn"
-    icon="https://innovationfactory.ca/wp-content/uploads/2022/10/Adapsyn-Bioscience.jpg"
-    link="https://www.adapsyn.com/"
-  />,  
-  <Sponsor
-    key="a"
-    name="Sheridan College"
-    icon="https://media-www.sheridancollege.ca/-/media/project/sheridan/shared/images/logos/sheridan-logo-header.svg?iar=0&rev=9aef8a944ba94fda83019bff6b668519&hash=CB36F99641395D235635808BC254DE63"
-    link="https://www.sheridancollege.ca/"
-  />,
-  <Sponsor
-    key="a"
-    name="Brock University"
-    icon="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Brock_University_Logo_2022.svg/2560px-Brock_University_Logo_2022.svg.png"
-    link="https://brocku.ca/"
-  /> */
-].map((sponsor, i) => {
+    name=sponsor[0]
+    icon=sponsor[1]
+    link=sponsor[2]
+  />
+}
+sponsors = sponsors.map((sponsor, i) => {
   return (
     <div className={`sponsor${i}`} key={i}>
       {sponsor}
     </div>
   );
 });
+
 
 const Sponsors = (args) => {
   useEffect(() => {
