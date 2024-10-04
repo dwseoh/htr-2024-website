@@ -16,7 +16,7 @@ const Navigation = () => {
         <Heading as="a" href="#about" fontSize="lg">
           About
         </Heading>
-        <Heading as="a" href="https://hack-the-ridge-2023.devpost.com/?ref_feature=challenge&ref_medium=discover" fontSize="lg">
+        <Heading as="a" href="https://hack-the-ridge-2024.devpost.com/?preview_token=82FkBOLes1WKh4QdTFr1oRk8uijbzoHISag9vDciIOw%3D" fontSize="lg">
           Devpost
         </Heading>
         <Heading as="a" href="#schedule" fontSize="lg">
