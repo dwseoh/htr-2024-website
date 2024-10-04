@@ -29,7 +29,7 @@ const Details = () => {
           /
         </Heading>
         <Heading fontSize={{ base: "0.5rem", sm: "xs", lg: "xl" }}>
-          Date TBD
+          December 14
         </Heading>
         <Heading
           fontSize={{ base: "0.5rem", sm: "xs", lg: "xl" }}
