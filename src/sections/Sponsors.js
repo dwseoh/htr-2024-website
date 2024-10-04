@@ -36,7 +36,6 @@ function Sponsor({ name, icon, link }) {
 }
 var sponsors = [
   ["Brock University", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Brock_University_Logo_2022.svg/2560px-Brock_University_Logo_2022.svg.pn", "https://broku.ca"]
-  ["name", "logo url", "url"]
 ]
 for (let i = 0; i < sponsors.length; i++) {
   sponsors[i] = <Sponsor
