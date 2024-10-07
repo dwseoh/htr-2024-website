@@ -28,7 +28,7 @@ const Navigation = () => {
         <Heading as="a" href="#team" fontSize="lg">
           Team
         </Heading>
-        <Heading as="a" href="https://my.mlh.io/oauth/authorize?client_id=rvBQdXCDB9bGD1G0TlVwSwIRiG5_0oRjr8Zb4iIRd6o&redirect_uri=https%3A%2F%2Fhacktheridge.ca%2F&response_type=token" fontSize="lg">
+        <Heading as="a" href="https://docs.google.com/forms/d/13AI0Y24BXQYudGNqgwVC5oazx1kPz3kKaPi87ILo0rk/edit" fontSize="lg">
           Register
         </Heading>
         <IconButton aria-label="Toggle Mode" onClick={toggleColorMode}>
