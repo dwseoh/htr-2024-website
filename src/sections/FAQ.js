@@ -78,7 +78,7 @@ const FAQ = () => {
       templateColumns={{ sm: "1fr", lg: "1fr 10fr", "2xl": "2fr 3fr" }}
       spacing={20}
     >
-      <VStack alignSelf="center">
+      <VStack alignSelf="left">
         <Heading
           fontSize={{ base: "4rem", lg: "10rem" }}
           mb={{ lg: "5" }}
