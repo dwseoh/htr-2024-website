@@ -76,7 +76,7 @@ const RegisterContact = (args) => {
             url="https://discord.gg/NWfVkvygHV"
             network="discord"
           />
-          <Icon text="DevPost!" url="https://hack-the-ridge-2023.devpost.com/?ref_feature=challenge&ref_medium=discover" network="rss" />
+          <Icon text="DevPost!" url="https://hack-the-ridge-2024.devpost.com/" network="rss" />
         </VStack>
       </div>
     </VStack>
