@@ -52,7 +52,7 @@ const FAQ = () => {
         trigger: ".faqHeading",
         start: "bottom bottom",
       },
-      x: 50,
+      x: 0,
       opacity: 0,
       duration: 1.5,
       ease: "power4",
@@ -63,7 +63,7 @@ const FAQ = () => {
         trigger: ".faqHeading",
         start: "bottom bottom",
       },
-      x: -50,
+      x: 0,
       opacity: 0,
       duration: 1.5,
       ease: "power4",
@@ -83,7 +83,6 @@ const FAQ = () => {
           fontSize={{ base: "4rem", lg: "10rem" }}
           mb={{ lg: "5" }}
           className="faqHeading"
-          style="position: relative; left: 100%; right: 0%"
         >
           FAQ
         </Heading>
