@@ -83,6 +83,7 @@ const FAQ = () => {
           fontSize={{ base: "4rem", lg: "10rem" }}
           mb={{ lg: "5" }}
           className="faqHeading"
+          alignSelf="left"
         >
           FAQ
         </Heading>
