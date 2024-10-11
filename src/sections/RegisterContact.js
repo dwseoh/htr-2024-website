@@ -58,7 +58,7 @@ const RegisterContact = (args) => {
         <VStack direction="row" w="full" pt="16" alignItems="flex-start">
           <Icon
             text="register here!"
-            url="https://docs.google.com/forms/d/13AI0Y24BXQYudGNqgwVC5oazx1kPz3kKaPi87ILo0rk/edit"
+            url="https://forms.gle/sEGW2djeqhXsmd9J8"
             network="sharethis"
           />
           <Icon
