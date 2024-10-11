@@ -41,12 +41,12 @@ const sponsors = [
   //   icon="https://static.mlh.io/brand-assets/logo/official/mlh-logo-color.png"
   //   link="https://mlh.io/"
   // />,
-  <Sponsor
-    key="a"
-    name="<name>"
-    icon="<logo url>"
-    link="<url of sponsor>"
-  />,
+  // <Sponsor
+  //   key="a"
+  //   name="<name>"
+  //   icon="<logo url>"
+  //   link="<url of sponsor>"
+  // />,
 ].map((sponsor, i) => {
   return (
     <div className={`sponsor${i}`} key={i}>
