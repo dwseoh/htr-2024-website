@@ -28,7 +28,7 @@ const Navigation = () => {
         <Heading as="a" href="#team" fontSize="lg">
           Team
         </Heading>
-        <Heading as="a" href="https://docs.google.com/forms/d/13AI0Y24BXQYudGNqgwVC5oazx1kPz3kKaPi87ILo0rk/edit" fontSize="lg">
+        <Heading as="a" href="https://docs.google.com/forms/d/e/1FAIpQLSekXA3uUBo0fsHjrNtoA0X782G9IIKNcNyVfiXwEsqjcxIMrg/viewform" fontSize="lg">
           Register
         </Heading>
         <IconButton aria-label="Toggle Mode" onClick={toggleColorMode}>
