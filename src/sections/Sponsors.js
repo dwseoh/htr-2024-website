@@ -16,6 +16,11 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { EmailIcon } from "@chakra-ui/icons";
 
+import siemens from "./img/siemens.png";
+import xyz from "./img/xyz.png";
+
+
+
 function Sponsor({ name, icon, link }) {
   return (
     <Flex
@@ -35,6 +40,48 @@ function Sponsor({ name, icon, link }) {
   );
 }
 const sponsors = [
+    <Sponsor
+      key="a"
+      name="Siemens"
+      icon= {siemens.src}
+      link="https://www.siemens.com/global/en.html"
+    />,
+    <Sponsor
+      key="a"
+      name="University of Waterloo"
+      icon= "https://files.catbox.moe/pnmpv4.png"
+      link="https://uwaterloo.ca"
+    />,
+    <Sponsor
+      key="a"
+      name="Generation XYZ"
+      icon= {xyz.src}
+      link="https://gen.xyz/"
+    />,
+    <Sponsor
+      key="a"
+      name="Toronto Metropolitan University"
+      icon="https://cms.education.macleans.ca/wp-content/uploads/2022/10/toronto-metropolitan.png"
+      link="https://www.torontomu.ca/"
+    />,   
+    <Sponsor
+      key="a"
+      name="Brock University"
+      icon="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Brock_University_Logo_2022.svg/2560px-Brock_University_Logo_2022.svg.png"
+      link="https://brocku.ca/"
+    />,
+    <Sponsor
+      key="a"
+      name="CodeCrafters"
+      icon="https://mintlify.s3-us-west-1.amazonaws.com/codecrafters/logo/light.svg"
+      link="https://codecrafters.io/"
+    />,
+    <Sponsor
+      key="a"
+      name="Forest of Flowers"
+      icon="https://cfa.ca/lookforafranchise/wp-content/uploads/sites/17/2021/01/ForestOfFlowers_stacked.png"
+      link="https://www.forestofflowers.com/"
+    />,
   // <Sponsor
   //   key="a"
   //   name="major league hacking"
