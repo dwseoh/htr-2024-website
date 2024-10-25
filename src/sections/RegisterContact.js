@@ -1,6 +1,7 @@
 import { Flex, Heading, VStack, HStack, Link } from "@chakra-ui/layout";
 import { SocialIcon } from "react-social-icons";
 import Thin from "./helpers";
+import links from './links';
 
 import { useEffect } from "react";
 import gsap from "gsap";
@@ -58,25 +59,29 @@ const RegisterContact = (args) => {
         <VStack direction="row" w="full" pt="16" alignItems="flex-start">
           <Icon
             text="register here!"
-            url="https://forms.gle/sEGW2djeqhXsmd9J8"
+            url={links.registration}
             network="sharethis"
           />
           <Icon
-            text="hacktheridge24@gmail.com"
-            url="mailto:hacktheridge24@gmail.com"
+            text=links.email
+            url={`mailto:${links.email}`}
             network="mailto"
           />
           <Icon
             text="@hacktheridge"
-            url="https://www.instagram.com/hacktheridge/"
+            url={links.instagram}
             network="instagram"
           />
           <Icon
             text="Join our discord server"
-            url="https://discord.gg/NWfVkvygHV"
+            url={links.discord}
             network="discord"
           />
-          <Icon text="DevPost!" url="https://hack-the-ridge-2024.devpost.com/" network="rss" />
+          <Icon
+              text="DevPost!"
+              url={links.devpost}
+              network="rss"
+          />
         </VStack>
       </div>
     </VStack>

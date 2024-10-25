@@ -6,6 +6,7 @@ import { useColorMode } from "@chakra-ui/color-mode";
 import { IconButton } from "@chakra-ui/button";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import logo from "./img/logo.png";
+import links from './links';
 // import {} from "@chakra/icons"
 const Navigation = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -16,7 +17,7 @@ const Navigation = () => {
         <Heading as="a" href="#about" fontSize="lg">
           About
         </Heading>
-        <Heading as="a" href="https://hack-the-ridge-2024.devpost.com/" fontSize="lg">
+        <Heading as="a" href={links.devpost} fontSize="lg">
           Devpost
         </Heading>
         <Heading as="a" href="#schedule" fontSize="lg">
@@ -28,7 +29,7 @@ const Navigation = () => {
         <Heading as="a" href="#team" fontSize="lg">
           Team
         </Heading>
-        <Heading as="a" href="https://docs.google.com/forms/d/e/1FAIpQLSekXA3uUBo0fsHjrNtoA0X782G9IIKNcNyVfiXwEsqjcxIMrg/viewform" fontSize="lg">
+        <Heading as="a" href={links.registration} fontSize="lg">
           Register
         </Heading>
         <IconButton aria-label="Toggle Mode" onClick={toggleColorMode}>
