@@ -17,7 +17,7 @@ const Navigation = () => {
         <Heading as="a" href="#about" fontSize="lg">
           About
         </Heading>
-        <Heading as="a" href=links.devpost fontSize="lg">
+        <Heading as="a" href={links.devpost} fontSize="lg">
           Devpost
         </Heading>
         <Heading as="a" href="#schedule" fontSize="lg">
@@ -29,7 +29,7 @@ const Navigation = () => {
         <Heading as="a" href="#team" fontSize="lg">
           Team
         </Heading>
-        <Heading as="a" href=links.registration fontSize="lg">
+        <Heading as="a" href={links.registration} fontSize="lg">
           Register
         </Heading>
         <IconButton aria-label="Toggle Mode" onClick={toggleColorMode}>
