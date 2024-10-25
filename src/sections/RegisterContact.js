@@ -59,27 +59,27 @@ const RegisterContact = (args) => {
         <VStack direction="row" w="full" pt="16" alignItems="flex-start">
           <Icon
             text="register here!"
-            url=links.registration
+            url={links.registration}
             network="sharethis"
           />
           <Icon
             text=links.email
-            url=`mailto:${links.email}`
+            url={`mailto:${links.email}`}
             network="mailto"
           />
           <Icon
             text="@hacktheridge"
-            url=links.instagram
+            url={links.instagram}
             network="instagram"
           />
           <Icon
             text="Join our discord server"
-            url=links.discord
+            url={links.discord}
             network="discord"
           />
           <Icon
               text="DevPost!"
-              url=links.devpost
+              url={links.devpost}
               network="rss"
           />
         </VStack>
