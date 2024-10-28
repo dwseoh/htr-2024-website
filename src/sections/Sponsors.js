@@ -18,6 +18,7 @@ import { EmailIcon } from "@chakra-ui/icons";
 
 import siemens from "./img/siemens.png";
 import xyz from "./img/xyz.png";
+import cleanshot from "./img/presskit.png";
 
 
 
@@ -81,6 +82,12 @@ const sponsors = [
       name="Forest of Flowers"
       icon="https://cfa.ca/lookforafranchise/wp-content/uploads/sites/17/2021/01/ForestOfFlowers_stacked.png"
       link="https://www.forestofflowers.com/"
+    />,
+    <Sponsor
+      key="a"
+      name="CleanShot"
+      icon={cleanshot.src}
+      link="https://cleanshot.com/"
     />,
   // <Sponsor
   //   key="a"
