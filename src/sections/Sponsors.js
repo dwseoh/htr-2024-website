@@ -18,7 +18,7 @@ import { EmailIcon } from "@chakra-ui/icons";
 
 import siemens from "./img/siemens.png";
 import xyz from "./img/xyz.png";
-import cleanshot from "./img/presskit.png";
+import cleanshot from "./img/cleanshot.png";
 
 
 
