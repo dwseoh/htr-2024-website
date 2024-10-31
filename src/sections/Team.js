@@ -15,6 +15,8 @@ import luqman from "./img/luqman.webp";
 import joshua from "./img/joshua.webp";
 import gavin from "./img/gavin.webp";
 import sid from "./img/sid.webp";
+import peter from "./img/peter.webp";
+import aiden from './img/aiden.webp';
 
 import { useEffect } from "react";
 import gsap from "gsap";
@@ -96,6 +98,14 @@ const Members = [
     name="Sid Donaldson"
     icon={sid.src}
   />,
+  <Member
+  name="Peter Shao"
+  icon={peter.src}
+/>,
+  <Member
+  name="Aiden Pinto"
+  icon={aiden.src}
+/>,
 ].map((member, i) => {
   return (
     <div className={`member${i}`}>
