@@ -68,7 +68,7 @@ const sponsorData = [
   },
   {
     name: "University of Waterloo",
-    icon: "https://files.catbox.moe/pnmpv4.png",
+    icon: "https://www.ouinfo.ca/assets/files/images/universityLogoNew_logo.png",
     link: "https://uwaterloo.ca",
     level: "Gold",
   },
@@ -114,6 +114,14 @@ const sponsorData = [
     link: "https://www.forestofflowers.com/",
     level: "Bronze",
   },
+
+  {
+    name: "Art of Problem Solving",
+    icon:
+      "https://assets.artofproblemsolving.com/images/aops-logo.svg",
+    link: "https://artofproblemsolving.com/",
+    level: "Bronze",
+  }
 ];
 
 const Sponsors = (args) => {
