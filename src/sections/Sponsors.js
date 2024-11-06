@@ -17,6 +17,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import siemens from "./img/siemens.png";
 import xyz from "./img/xyz.png";
 import cleanshot from "./img/cleanshot.png";
+import gotcha from "./img/gotcha.png"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -120,6 +121,14 @@ const sponsorData = [
     icon:
       "https://assets.artofproblemsolving.com/images/aops-logo.svg",
     link: "https://artofproblemsolving.com/",
+    level: "Bronze",
+  },
+
+  {
+    name: "Gotcha Bubble Tea",
+    icon:
+      gotcha.src,
+    link: "https://www.instagram.com/gotchabubbletea_oakville",
     level: "Bronze",
   }
 ];
