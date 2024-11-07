@@ -17,7 +17,9 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import siemens from "./img/siemens.png";
 import xyz from "./img/xyz.png";
 import cleanshot from "./img/cleanshot.png";
-import gotcha from "./img/gotcha.png"
+import gotcha from "./img/gotcha.png";
+import onepass from "./img/onepass.png";
+import queens from "./img/queens.png"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -69,8 +71,20 @@ const sponsorData = [
   },
   {
     name: "Queen's University",
-    icon: "https://caldo.ca/wp-content/uploads/2017/01/Queens-university-logo-vertical-digital-rgb-full-colour-1208x898-2-1024x761.webp",
+    icon: queens.src,
     link: "https://www.queensu.ca/",
+    level: "Diamond",
+  },
+  {
+    name: "1Password",
+    icon: onepass.src,
+    link: "https://1password.com",
+    level: "Diamond",
+  },
+  {
+    name: "Hatch",
+    icon:  "https://cna.ca/wp-content/uploads/2018/11/Hatch_Logo_Colour_RGB.png",
+    link: "https://www.hatch.com/",
     level: "Diamond",
   },
   {
@@ -79,6 +93,7 @@ const sponsorData = [
     link: "https://uwaterloo.ca",
     level: "Gold",
   },
+  
   {
     name: "Generation XYZ",
     icon: xyz.src,
