@@ -68,6 +68,12 @@ const sponsorData = [
     level: "Diamond",
   },
   {
+    name: "Queen's University",
+    icon: "https://caldo.ca/wp-content/uploads/2017/01/Queens-university-logo-vertical-digital-rgb-full-colour-1208x898-2-1024x761.webp",
+    link: "https://www.queensu.ca/",
+    level: "Diamond",
+  },
+  {
     name: "University of Waterloo",
     icon: "https://www.ouinfo.ca/assets/files/images/universityLogoNew_logo.png",
     link: "https://uwaterloo.ca",
