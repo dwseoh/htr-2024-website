@@ -76,12 +76,6 @@ const sponsorData = [
     level: "Diamond",
   },
   {
-    name: "1Password",
-    icon: onepass.src,
-    link: "https://1password.com",
-    level: "Diamond",
-  },
-  {
     name: "Hatch",
     icon:  "https://cna.ca/wp-content/uploads/2018/11/Hatch_Logo_Colour_RGB.png",
     link: "https://www.hatch.com/",
@@ -112,6 +106,12 @@ const sponsorData = [
     icon:
       "https://mintlify.s3-us-west-1.amazonaws.com/codecrafters/logo/light.svg",
     link: "https://codecrafters.io/",
+    level: "Gold",
+  },
+  {
+    name: "1Password",
+    icon: onepass.src,
+    link: "https://1password.com",
     level: "Gold",
   },
   {
