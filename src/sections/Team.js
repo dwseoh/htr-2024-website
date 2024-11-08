@@ -26,8 +26,12 @@ gsap.registerPlugin(ScrollTrigger);
 function Member({ name, icon }) {
   return (
     <Flex
-      boxShadow="md"
-      _hover={{ boxShadow: "outline" }}
+      boxShadow="lg"
+      _hover={{
+        boxShadow: "2xl",
+        transform: "translateY(-10px)",
+        transition: "all 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
+      }}
       backgroundColor={useColorModeValue("gray.200", "gray.700")}
       borderRadius="20px"
       padding="5"
@@ -35,11 +39,19 @@ function Member({ name, icon }) {
       direction="column"
       justify="space-evenly"
       align="center"
+      transition="all 0.5s cubic-bezier(0.4, 0, 0.2, 1)"
+      role="group"
     >
       <Heading textAlign="center" fontSize="1.5rem" pb="6">
         {name}
       </Heading>
-      <Box boxSize="100px">
+      <Box 
+        boxSize="100px"
+        transition="transform 0.3s ease-in-out"
+        _groupHover={{
+          transform: "scale(1.05)",
+        }}
+      >
         <Image
           src={icon}
           w="100px"
@@ -52,7 +64,6 @@ function Member({ name, icon }) {
     </Flex>
   );
 }
-
 const Members = [
   <Member
     name="Jamie Seoh"

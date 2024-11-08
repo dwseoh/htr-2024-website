@@ -15,7 +15,7 @@
     "@fontsource/major-mono-display": "^4.5.0",
     "@fontsource/montserrat": "^4.5.1",
     "framer-motion": "^4.1.17",
-    "gsap": "^3.8.0",
+    "gsap": "^3.12.5",
     "lucide-react": "^0.454.0",
     "next": "^12.3.2",
     "postprocessing": "^6.23.2",
