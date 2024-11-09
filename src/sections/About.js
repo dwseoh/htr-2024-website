@@ -17,22 +17,15 @@ const AboutText = () => {
       lineHeight={{ sm: "3rem", lg: "4rem" }}
       fontSize={{ sm: "1rem", lg: "1.25rem" }}
     >
-      Hack The Ridge is Iroquois Ridge High School&apos;s annual hackathon and pitch
-      competition where students collaborate to come up with solutions to
-      real-world problems. The event will take place on <b>December 14th, 2024</b>, from <b>8 AM to 8 PM</b>. Workshops and guest speakers will
-      be helping participants to expand their skill sets, which can not only be
-      applied during the event but also onwards. During the event, participants
-      will form teams of up to four people (though forming a team is not
-      mandatory) and{" "}
-      <b>
-        {" "}
-        come up with a creative technological solution to a problem related to
-        our theme{" "}
-      </b>
+        <b>Hack The Ridge</b> is a 12-hour innovation challenge at Iroquois Ridge High School
+        where students tackle real-world problems through technology. Join us on{" "}
+        <b>December 14th, 2024, 8 AM to 8 PM</b> for hands-on workshops, inspiring speakers,
+        and collaborative problem-solving. Work solo or in teams of up to four to{" "}
+        <b>build creative solutions aligned with our theme</b>.
+      
     </Thin>
   );
 };
-
 const About = (args) => {
   useEffect(() => {
     gsap.from(".aboutHeading", {
