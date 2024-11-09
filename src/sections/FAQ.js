@@ -107,7 +107,7 @@ const FAQ = () => {
             {{
               question: "What are the prizes for winning?",
               answer:
-                "Our current prize pool is worth $200+, and is expected to grow. Winnings will be distributed through gift cards and swag. There will be two winners: first place winner and runner up.",
+                "Our current prize pool is worth $6000+, and is expected to grow. Winnings will be distributed through gift cards and swag. There will be serval winners.",
             }}
           </Question>
           <Question>
