@@ -17,14 +17,18 @@ const AboutText = () => {
       lineHeight={{ sm: "3rem", lg: "4rem" }}
       fontSize={{ sm: "1rem", lg: "1.25rem" }}
     >
-      <b>Hack The Ridge</b> is Iroquois Ridge High School's annual hackathon and
-      pitch competition where students collaborate to come up with solutions to
-      real-world problems. It will take place on <b>December 14th, 2024</b>, from
-      <b>8 AM to 8 PM</b>. Workshops and guest speakers will help participants
-      expand their skill sets and form teams of up to four people (though forming
-      a team is not mandatory). They will then{" "}
-      <b>come up with a creative technological solution to a problem related to
-        our theme</b>
+      Hack The Ridge is Iroquois Ridge High School&apos;s annual hackathon and pitch
+      competition where students collaborate to come up with solutions to
+      real-world problems. The event will take place on <b>December 14th, 2024</b>, from <b>8 AM to 8 PM</b>. Workshops and guest speakers will
+      be helping participants to expand their skill sets, which can not only be
+      applied during the event but also onwards. During the event, participants
+      will form teams of up to four people (though forming a team is not
+      mandatory) and{" "}
+      <b>
+        {" "}
+        come up with a creative technological solution to a problem related to
+        our theme{" "}
+      </b>
     </Thin>
   );
 };
