@@ -1,7 +1,7 @@
 /**
  * EXTERNAL
  */
-import { Flex, HStack, VStack, Heading, Text } from "@chakra-ui/react";
+import { Flex, Stack, VStack, Heading, Text } from "@chakra-ui/react";
 import Thin from "./helpers";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
@@ -45,8 +45,9 @@ const CounterSection = () => {
       className="counterSection"
       justify="center"
     >
-      <HStack
-        spacing={{ base: "16", lg: "32" }}
+      <Stack
+        direction={{ base: "column", lg: "row" }}
+        spacing={{ base: "8", lg: "32" }}
         alignItems="center"
         justify="center"
       >
@@ -72,7 +73,7 @@ const CounterSection = () => {
             </Text>
           </Flex>
         ))}
-      </HStack>
+      </Stack>
     </Flex>
   );
 };
