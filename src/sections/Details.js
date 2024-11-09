@@ -19,7 +19,7 @@ const Details = () => {
         spacing={{ sm: "2" }}
       >
         <Heading fontSize={{ base: "0.5rem", sm: "xs", lg: "xl" }}>
-          In Person Hackathon
+          Iroquois Ridge High School
         </Heading>
         <Heading
           fontSize={{ base: "0.5rem", sm: "xs", lg: "xl" }}
@@ -39,7 +39,7 @@ const Details = () => {
           /
         </Heading>
         <Heading fontSize={{ base: "0.5rem", sm: "xs", lg: "xl" }}>
-          12 Hour Event
+          150+ Participants
         </Heading>
       </HStack>
     </div>

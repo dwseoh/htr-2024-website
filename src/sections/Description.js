@@ -23,7 +23,7 @@ const Description = () => {
     </HStack>
   );
 };
-const phrases = ["design.", "collaborate.", "innovate.", "develop."]; // Come on thomas
+const phrases = ["Innovate to solve real-world problems.", "Design to make it pretty.", "Collaborate to make it better.", "Develop to make it work."]; // Come on thomas
 const animateText = (phrase) => {
   let text = "";
   phrase %= phrases.length;
