@@ -39,7 +39,7 @@ const Details = () => {
           /
         </Heading>
         <Heading fontSize={{ base: "0.5rem", sm: "xs", lg: "xl" }}>
-          150+ Participants
+          Largest Highschool Hackathon in Canada
         </Heading>
       </HStack>
     </div>
