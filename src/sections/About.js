@@ -1,14 +1,81 @@
 /**
  * EXTERNAL
  */
-import { Flex, HStack, VStack, Heading } from "@chakra-ui/react";
+import { Flex, HStack, VStack, Heading, Text } from "@chakra-ui/react";
 import Thin from "./helpers";
-
-import { useEffect } from "react";
-
+import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
+
+const CounterSection = () => {
+  const counterRefs = [useRef(null), useRef(null), useRef(null)];
+  
+  const counterData = [
+    { value: 7500, prefix: "$", suffix: "+", label: "in Prizes" },
+    { value: 12, prefix: "", suffix: "", label: "Hours of Hacking" },
+    { value: 150, prefix: "", suffix: "+", label: "Hackers" }
+  ];
+
+  useEffect(() => {
+    counterRefs.forEach((ref, index) => {
+      const obj = { value: 0 };
+      
+      gsap.to(obj, {
+        scrollTrigger: {
+          trigger: ref.current,
+          start: "center bottom",
+        },
+        value: counterData[index].value,
+        duration: 2,
+        ease: "power2.out",
+        onUpdate: () => {
+          if (ref.current) {
+            ref.current.textContent = `${counterData[index].prefix}${Math.round(obj.value)}${counterData[index].suffix}`;
+          }
+        }
+      });
+    });
+  }, []);
+
+  return (
+    <Flex 
+      w="full" 
+      pt={{ base: "8", lg: "12" }}
+      className="counterSection"
+      justify="center"
+    >
+      <HStack
+        spacing={{ base: "16", lg: "32" }}
+        alignItems="center"
+        justify="center"
+      >
+        {counterData.map((item, index) => (
+          <Flex key={index} direction="column" alignItems="center">
+            <Text
+              ref={counterRefs[index]}
+              fontSize={{ base: "2.5rem", lg: "3.5rem" }}
+              fontWeight="bold"
+              lineHeight="1"
+              display="flex"
+              alignItems="center"
+              justifyContent="center"
+            >
+              {counterData[index].prefix}0{counterData[index].suffix}
+            </Text>
+            <Text
+              fontSize={{ sm: "1rem", lg: "1.25rem" }}
+              lineHeight={{ sm: "3rem", lg: "4rem" }}
+              textAlign="center"
+            >
+              {item.label}
+            </Text>
+          </Flex>
+        ))}
+      </HStack>
+    </Flex>
+  );
+};
 
 const AboutText = () => {
   return (
@@ -22,10 +89,10 @@ const AboutText = () => {
         <b>December 14th, 2024, 8 AM to 8 PM</b> for hands-on workshops, inspiring speakers,
         and collaborative problem-solving. Work solo or in teams of up to four to{" "}
         <b>build creative solutions aligned with our theme</b>.
-      
     </Thin>
   );
 };
+
 const About = (args) => {
   useEffect(() => {
     gsap.from(".aboutHeading", {
@@ -44,6 +111,16 @@ const About = (args) => {
         start: "center bottom",
       },
       x: 50,
+      opacity: 0,
+      duration: 1,
+    });
+
+    gsap.from(".counterSection", {
+      scrollTrigger: {
+        trigger: ".counterSection",
+        start: "center bottom",
+      },
+      y: 30,
       opacity: 0,
       duration: 1,
     });
@@ -67,6 +144,7 @@ const About = (args) => {
       <div className="aboutText">
         <AboutText />
       </div>
+      <CounterSection />
     </VStack>
   );
 };
