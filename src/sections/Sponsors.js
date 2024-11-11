@@ -25,6 +25,7 @@ import dominos from "./img/dominos.png";
 import coddy from "./img/coddy.png";
 import vueschool from "./img/vueschool.png";
 import metro from "./img/metro.png";
+import townofoakville from "./img/townofoakville.png"
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -212,6 +213,12 @@ const sponsorData = [
     name: "Coddy",
     icon: coddy.src,
     link: "https://coddy.tech/",
+    level: "Gold",
+  },
+  {
+    name: "Town of Oakville",
+    icon:townofoakville.src,
+    link: "https://www.oakville.ca/",
     level: "Gold",
   },
   {
