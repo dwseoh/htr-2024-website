@@ -21,6 +21,8 @@ import cleanshot from "./img/cleanshot.png";
 import gotcha from "./img/gotcha.png";
 import onepass from "./img/onepass.png";
 import queens from "./img/queens.png";
+import dominos from "./img/dominos.png";
+import coddy from "./img/coddy.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -162,6 +164,12 @@ const sponsorData = [
     level: "Diamond",
   },
   {
+    name: "Domino's Pizza",
+    icon: dominos.src,
+    link: "https://www.dominos.ca/",
+    level: "Diamond",
+  },
+  {
     name: "Hatch",
     icon: "https://cna.ca/wp-content/uploads/2018/11/Hatch_Logo_Colour_RGB.png",
     link: "https://www.hatch.com/",
@@ -195,6 +203,12 @@ const sponsorData = [
     name: "1Password",
     icon: onepass.src,
     link: "https://1password.com",
+    level: "Gold",
+  },
+  {
+    name: "Coddy",
+    icon: coddy.src,
+    link: "https://coddy.tech/",
     level: "Gold",
   },
   {
