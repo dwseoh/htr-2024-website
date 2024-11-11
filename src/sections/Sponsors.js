@@ -248,7 +248,7 @@ const sponsorData = [
     name: "Metro",
     icon: metro.src,
     link: "https://metro.ca/",
-    level: "Silver",
+    level: "Bronze",
   },
   {
     name: "Gotcha Bubble Tea",
