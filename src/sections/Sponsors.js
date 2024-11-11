@@ -23,6 +23,9 @@ import onepass from "./img/onepass.png";
 import queens from "./img/queens.png";
 import dominos from "./img/dominos.png";
 import coddy from "./img/coddy.png";
+import vueschool from "./img/vueschool.png";
+import metro from "./img/metro.png";
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -224,6 +227,12 @@ const sponsorData = [
     level: "Silver",
   },
   {
+    name: "Vue School",
+    icon: vueschool.src,
+    link: "https://vueschool.io/",
+    level: "Silver",
+  },
+  {
     name: "Forest of Flowers",
     icon: "https://cfa.ca/lookforafranchise/wp-content/uploads/sites/17/2021/01/ForestOfFlowers_stacked.png",
     link: "https://www.forestofflowers.com/",
@@ -234,6 +243,12 @@ const sponsorData = [
     icon: "https://assets.artofproblemsolving.com/images/aops-logo.svg",
     link: "https://artofproblemsolving.com/",
     level: "Bronze",
+  },
+  {
+    name: "Metro",
+    icon: metro.src,
+    link: "https://metro.ca/",
+    level: "Silver",
   },
   {
     name: "Gotcha Bubble Tea",
