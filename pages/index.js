@@ -1,3 +1,5 @@
+// Home.js
+
 /**
  * EXTERNAL IMPORTS
  */
@@ -19,8 +21,9 @@ import Team from "../src/sections/Team";
 import RegisterContact from "../src/sections/RegisterContact";
 import FAQ from "../src/sections/FAQ";
 import Footer from "../src/sections/Footer";
+
 const Divide = () => {
-  return <Divider mt={{ base: "50", lg: "100" }}></Divider>;
+  return <Divider mt={{ base: "50px", lg: "100px" }}></Divider>;
 };
 
 const Home = () => {
@@ -34,10 +37,11 @@ const Home = () => {
     >
       <Navigation />
 
+      {/* Added top margin to prevent content overlap with the fixed navbar */}
       <Container
         maxW={{ base: "85vw", md: "80vw", lg: "75vw" }}
         p="0"
-        mt={{ sm: "0", md: "16" }}
+        mt="80px" // Adjusted margin-top to match the navbar height
         h="auto"
       >
         <Title />
