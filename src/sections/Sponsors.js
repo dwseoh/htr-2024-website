@@ -180,6 +180,12 @@ const sponsorData = [
     level: "Diamond",
   },
   {
+    name: "Deloitte",
+    icon: "https://energycouncil.com/wp-content/uploads/Deloitte.png",
+    link: "https://www2.deloitte.com",
+    level: "Diamond",
+  },
+  {
     name: "University of Waterloo",
     icon: "https://www.ouinfo.ca/assets/files/images/universityLogoNew_logo.png",
     link: "https://uwaterloo.ca",
