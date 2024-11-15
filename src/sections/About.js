@@ -12,7 +12,7 @@ const CounterSection = () => {
   const counterRefs = [useRef(null), useRef(null), useRef(null)];
   
   const counterData = [
-    { value: 7500, prefix: "$", suffix: "+", label: "in Prizes" },
+    { value: 7000, prefix: "$", suffix: "+", label: "in Prizes" },
     { value: 12, prefix: "", suffix: "", label: "Hours of Hacking" },
     { value: 150, prefix: "", suffix: "+", label: "Hackers" }
   ];
