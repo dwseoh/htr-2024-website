@@ -91,7 +91,7 @@ const FAQ = () => {
         <Accordion allowToggle allowMultiple mb={{ base: "5", sm: "0" }}>
           <Question>
             {{
-              question: "Do I need prior coding experience to participate?",
+              question: "Do I need prior coding experience?",
               answer:
                 "There is no experience required to participate! You will have the opportunity to learn through our workshops! ",
             }}
