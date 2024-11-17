@@ -269,6 +269,12 @@ const sponsorData = [
     link: "https://www.instagram.com/gotchabubbletea_oakville",
     level: "Bronze",
   },
+  {
+    name: "Barka and Fitz ",
+    icon: "https://static.wixstatic.com/media/8e068d_cf4b4f5e758541199d193b22a20a66f6~mv2.png/v1/fill/w_252,h_81,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/8e068d_cf4b4f5e758541199d193b22a20a66f6~mv2.png",
+    link: "https://www.barkandfitz.net/",
+    level: "Bronze",
+  },
 ];
 
 const Sponsors = (args) => {
