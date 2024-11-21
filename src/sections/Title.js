@@ -1,5 +1,3 @@
-// Title.js
-
 import { VStack, Heading } from "@chakra-ui/react";
 import { useEffect } from "react";
 import gsap from "gsap";
@@ -10,9 +8,13 @@ const Title = () => {
   }, []);
 
   return (
-    <VStack alignItems="center" w="full" pt="50px"> {/* Increased paddingTop */}
+    <VStack alignItems="center" w="full" pt={{ base: "30px", md: "50px" }}>
       <div className="title">
-        <Heading fontSize={{ base: '4xl', sm: "6xl", lg: "8xl" }} textAlign='center'>
+        <Heading 
+          fontSize={{ base: "5xl", sm: "7xl", md: "8xl", lg: "9xl" }} 
+          textAlign="center"
+          lineHeight={{ base: "1.1", sm: "1" }}
+        >
           Hack The Ridge
         </Heading>
       </div>

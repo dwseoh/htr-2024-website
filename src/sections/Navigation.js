@@ -64,70 +64,23 @@ const Navigation = () => {
             ml={4}
             fontSize={{ base: "lg", md: "lg" }}
             color={colorMode === "light" ? "gray.800" : "white"}
+            display={{ base: "none", md: "block" }} // Hide on mobile, show on medium and up
           >
             Hack the Ridge
           </Heading>
         </Flex>
 
-        {/* Spacer to push the navigation links to the right */}
+        {/* Rest of the code remains the same */}
         <Spacer />
 
-        {/* Desktop Navigation Links */}
         <HStack spacing={8} align="center" display={{ base: "none", md: "flex" }}>
-          <Heading 
-            as="a" 
-            href="#about" 
-            fontSize="lg"
-            transition="color 0.2s"
-            _hover={{ color: colorMode === "light" ? "gray.600" : "gray.300" }}
-          >
-            About
-          </Heading>
-          <Heading 
-            as="a" 
-            href="https://hack-the-ridge-2024.devpost.com/" 
-            fontSize="lg"
-            transition="color 0.2s"
-            _hover={{ color: colorMode === "light" ? "gray.600" : "gray.300" }}
-          >
-            Devpost
-          </Heading>
-          <Heading 
-            as="a" 
-            href="#schedule" 
-            fontSize="lg"
-            transition="color 0.2s"
-            _hover={{ color: colorMode === "light" ? "gray.600" : "gray.300" }}
-          >
-            Schedule
-          </Heading>
-          <Heading 
-            as="a" 
-            href="#sponsors" 
-            fontSize="lg"
-            transition="color 0.2s"
-            _hover={{ color: colorMode === "light" ? "gray.600" : "gray.300" }}
-          >
-            Sponsors
-          </Heading>
-          <Heading 
-            as="a" 
-            href="#team" 
-            fontSize="lg"
-            transition="color 0.2s"
-            _hover={{ color: colorMode === "light" ? "gray.600" : "gray.300" }}
-          >
-            Team
-          </Heading>
-          <Heading 
-            as="a" 
-            href="https://forms.gle/sEGW2djeqhXsmd9J8" 
-            fontSize="lg"
-            transition="color 0.2s"
-            _hover={{ color: colorMode === "light" ? "gray.600" : "gray.300" }}
-          >
-            Register
-          </Heading>
+          {/* Navigation links remain the same */}
+          <Heading as="a" href="#about" fontSize="lg" transition="color 0.2s" _hover={{ color: colorMode === "light" ? "gray.600" : "gray.300" }}>About</Heading>
+          <Heading as="a" href="https://hack-the-ridge-2024.devpost.com/" fontSize="lg" transition="color 0.2s" _hover={{ color: colorMode === "light" ? "gray.600" : "gray.300" }}>Devpost</Heading>
+          <Heading as="a" href="#schedule" fontSize="lg" transition="color 0.2s" _hover={{ color: colorMode === "light" ? "gray.600" : "gray.300" }}>Schedule</Heading>
+          <Heading as="a" href="#sponsors" fontSize="lg" transition="color 0.2s" _hover={{ color: colorMode === "light" ? "gray.600" : "gray.300" }}>Sponsors</Heading>
+          <Heading as="a" href="#team" fontSize="lg" transition="color 0.2s" _hover={{ color: colorMode === "light" ? "gray.600" : "gray.300" }}>Team</Heading>
+          <Heading as="a" href="https://forms.gle/sEGW2djeqhXsmd9J8" fontSize="lg" transition="color 0.2s" _hover={{ color: colorMode === "light" ? "gray.600" : "gray.300" }}>Register</Heading>
           <IconButton
             aria-label="Toggle Mode"
             onClick={toggleColorMode}
@@ -138,7 +91,6 @@ const Navigation = () => {
           </IconButton>
         </HStack>
 
-        {/* Mobile Hamburger Menu */}
         <IconButton
           aria-label="Open Menu"
           icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
@@ -147,7 +99,7 @@ const Navigation = () => {
         />
       </Flex>
 
-      {/* Mobile Drawer */}
+      {/* Mobile Drawer remains the same */}
       <Drawer placement="right" onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay />
         <DrawerContent
@@ -157,60 +109,12 @@ const Navigation = () => {
           <DrawerCloseButton />
           <DrawerBody>
             <VStack spacing={6} mt={12}>
-              <Heading 
-                as="a" 
-                href="#about" 
-                fontSize="lg"
-                onClick={onClose}
-                _hover={{ color: colorMode === "light" ? "gray.600" : "gray.300" }}
-              >
-                About
-              </Heading>
-              <Heading 
-                as="a" 
-                href="https://hack-the-ridge-2024.devpost.com/" 
-                fontSize="lg"
-                onClick={onClose}
-                _hover={{ color: colorMode === "light" ? "gray.600" : "gray.300" }}
-              >
-                Devpost
-              </Heading>
-              <Heading 
-                as="a" 
-                href="#schedule" 
-                fontSize="lg"
-                onClick={onClose}
-                _hover={{ color: colorMode === "light" ? "gray.600" : "gray.300" }}
-              >
-                Schedule
-              </Heading>
-              <Heading 
-                as="a" 
-                href="#sponsors" 
-                fontSize="lg"
-                onClick={onClose}
-                _hover={{ color: colorMode === "light" ? "gray.600" : "gray.300" }}
-              >
-                Sponsors
-              </Heading>
-              <Heading 
-                as="a" 
-                href="#team" 
-                fontSize="lg"
-                onClick={onClose}
-                _hover={{ color: colorMode === "light" ? "gray.600" : "gray.300" }}
-              >
-                Team
-              </Heading>
-              <Heading 
-                as="a" 
-                href="https://forms.gle/sEGW2djeqhXsmd9J8" 
-                fontSize="lg"
-                onClick={onClose}
-                _hover={{ color: colorMode === "light" ? "gray.600" : "gray.300" }}
-              >
-                Register
-              </Heading>
+              <Heading as="a" href="#about" fontSize="lg" onClick={onClose} _hover={{ color: colorMode === "light" ? "gray.600" : "gray.300" }}>About</Heading>
+              <Heading as="a" href="https://hack-the-ridge-2024.devpost.com/" fontSize="lg" onClick={onClose} _hover={{ color: colorMode === "light" ? "gray.600" : "gray.300" }}>Devpost</Heading>
+              <Heading as="a" href="#schedule" fontSize="lg" onClick={onClose} _hover={{ color: colorMode === "light" ? "gray.600" : "gray.300" }}>Schedule</Heading>
+              <Heading as="a" href="#sponsors" fontSize="lg" onClick={onClose} _hover={{ color: colorMode === "light" ? "gray.600" : "gray.300" }}>Sponsors</Heading>
+              <Heading as="a" href="#team" fontSize="lg" onClick={onClose} _hover={{ color: colorMode === "light" ? "gray.600" : "gray.300" }}>Team</Heading>
+              <Heading as="a" href="https://forms.gle/sEGW2djeqhXsmd9J8" fontSize="lg" onClick={onClose} _hover={{ color: colorMode === "light" ? "gray.600" : "gray.300" }}>Register</Heading>
               <IconButton
                 aria-label="Toggle Mode"
                 onClick={toggleColorMode}

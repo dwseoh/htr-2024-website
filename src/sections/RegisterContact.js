@@ -1,4 +1,4 @@
-import { Flex, Heading, VStack, HStack, Link } from "@chakra-ui/layout";
+import { Flex, Heading, VStack, HStack, Link, Text } from "@chakra-ui/layout";
 import { SocialIcon } from "react-social-icons";
 import Thin from "./helpers";
 
@@ -77,12 +77,25 @@ const RegisterContact = (args) => {
             network="discord"
           />
           <Icon
-              text="DevPost!"
-              url="https://hack-the-ridge-2024.devpost.com/"
-              network="rss"
+            text="DevPost!"
+            url="https://hack-the-ridge-2024.devpost.com/"
+            network="rss"
           />
         </VStack>
       </div>
+      
+      {/* Footer */}
+      <HStack 
+        w="full" 
+        py={4} 
+        mt={10} 
+        justifyContent="center" 
+        spacing={2}
+      >
+        <Thin fontSize={{ base: "0.75rem", lg: "1rem" }}>Made with</Thin>
+        <Text color="#006CEE">♥</Text>
+        <Thin fontSize={{ base: "0.75rem", lg: "1rem" }}>by the HacktheRidge team</Thin>
+      </HStack>
     </VStack>
   );
 };

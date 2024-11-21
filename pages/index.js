@@ -51,8 +51,6 @@ const Home = () => {
         <Divide />
         <About id="about" />
         <Divide />
-        {/* <Streams id="streams" />
-        <Divide /> */}
         <Schedule id="schedule" />
         <Divide />
         <FAQ />
@@ -62,8 +60,6 @@ const Home = () => {
         <Team id="team" />
         <Divide />
         <RegisterContact id="register" />
-        <Divide />
-        <Footer />
       </Container>
     </Container>
   );

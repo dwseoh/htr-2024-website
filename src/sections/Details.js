@@ -1,7 +1,5 @@
 import { HStack, Heading } from "@chakra-ui/react";
-
 import { useEffect } from "react";
-
 import gsap from "gsap";
 
 const Details = () => {
@@ -16,29 +14,29 @@ const Details = () => {
         justifyContent="space-evenly"
         mt="8"
         w="full"
-        spacing={{ sm: "2" }}
+        spacing={{ base: "2", sm: "2" }}
       >
-        <Heading fontSize={{ base: "0.5rem", sm: "xs", lg: "xl" }}>
+        <Heading fontSize={{ base: "xs", sm: "sm", lg: "xl" }}>
           Iroquois Ridge High School
         </Heading>
         <Heading
-          fontSize={{ base: "0.5rem", sm: "xs", lg: "xl" }}
-          pl={{ base: "6", sm: "4", md: "0" }}
-          pr={{ base: "6", sm: "4", md: "0" }}
+          fontSize={{ base: "xs", sm: "sm", lg: "xl" }}
+          pl={{ base: "2", sm: "4", md: "0" }}
+          pr={{ base: "2", sm: "4", md: "0" }}
         >
           /
         </Heading>
-        <Heading fontSize={{ base: "0.5rem", sm: "xs", lg: "xl" }}>
+        <Heading fontSize={{ base: "xs", sm: "sm", lg: "xl" }}>
           December 14, 2024
         </Heading>
         <Heading
-          fontSize={{ base: "0.5rem", sm: "xs", lg: "xl" }}
-          pl={{ base: "6", sm: "4", md: "0" }}
-          pr={{ base: "6", sm: "4", md: "0" }}
+          fontSize={{ base: "xs", sm: "sm", lg: "xl" }}
+          pl={{ base: "2", sm: "4", md: "0" }}
+          pr={{ base: "2", sm: "4", md: "0" }}
         >
           /
         </Heading>
-        <Heading fontSize={{ base: "0.5rem", sm: "xs", lg: "xl" }}>
+        <Heading fontSize={{ base: "xs", sm: "sm", lg: "xl" }}>
           Largest Highschool Hackathon in Canada
         </Heading>
       </HStack>
