@@ -25,7 +25,8 @@ import dominos from "./img/dominos.png";
 import coddy from "./img/coddy.png";
 import vueschool from "./img/vueschool.png";
 import metro from "./img/metro.png";
-import townofoakville from "./img/townofoakville.png"
+import townofoakville from "./img/townofoakville.png";
+import waterloo from "./img/waterloo.png";
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -187,7 +188,7 @@ const sponsorData = [
   },
   {
     name: "University of Waterloo",
-    icon: "https://www.ouinfo.ca/assets/files/images/universityLogoNew_logo.png",
+    icon: waterloo.src,
     link: "https://uwaterloo.ca",
     level: "Gold",
   },
