@@ -27,7 +27,7 @@ import vueschool from "./img/vueschool.png";
 import metro from "./img/metro.png";
 import townofoakville from "./img/townofoakville.png";
 import waterloo from "./img/waterloo.png";
-
+import tmu from "./img/tmu.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -200,7 +200,7 @@ const sponsorData = [
   },
   {
     name: "Toronto Metropolitan University",
-    icon: "https://cms.education.macleans.ca/wp-content/uploads/2022/10/toronto-metropolitan.png",
+    icon: tmu.src,
     link: "https://www.torontomu.ca/",
     level: "Gold",
   },
@@ -267,7 +267,7 @@ const sponsorData = [
   {
     name: "Gotcha Bubble Tea",
     icon: gotcha.src,
-    link: "https://www.instagram.com/gotchabubbletea_oakville",
+    link: "https://www.gotchabubbletea.ca/",
     level: "Bronze",
   },
   {
