@@ -1,16 +1,18 @@
+import React, { useEffect, useRef } from 'react';
 import {
-  Container,
-  Heading,
-  SimpleGrid,
-  Flex,
+  Box,
   Button,
+  Container,
+  Flex,
+  Heading,
   Image,
+  SimpleGrid,
+  Text,
   Badge,
-} from "@chakra-ui/react";
+  useColorModeValue,
+} from '@chakra-ui/react';
 import { EmailIcon } from "@chakra-ui/icons";
-import { useColorModeValue } from "@chakra-ui/color-mode";
 import Thin from "./helpers";
-import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
@@ -28,11 +30,13 @@ import metro from "./img/metro.png";
 import townofoakville from "./img/townofoakville.png";
 import waterloo from "./img/waterloo.png";
 import tmu from "./img/tmu.png";
+import otu from "./img/otu.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
 function Sponsor({ name, icon, link, level, className }) {
   const borderColors = {
+    Platinum: "#1b3956",
     Diamond: "blue.500",
     Gold: "yellow.500",
     Silver: "gray.500",
@@ -44,16 +48,21 @@ function Sponsor({ name, icon, link, level, className }) {
   const hoverBgColor = useColorModeValue("gray.300", "gray.600");
   const textColor = useColorModeValue("gray.700", "gray.200");
 
+  // Special styling for Platinum sponsors
+  const isSpecialTier = level === "Platinum";
+  const scale = isSpecialTier ? "scale(1.02)" : "scale(1)";
+  
   return (
     <Flex
       as="a"
       href={link}
       className={className}
-      boxShadow="lg"
+      boxShadow={isSpecialTier ? "2xl" : "lg"}
       role="group"
+      gridColumn={isSpecialTier ? "span 2" : "auto"}
       _hover={{
         boxShadow: "2xl",
-        transform: "translateY(-10px)",
+        transform: `translateY(-10px) ${scale}`,
         transition: "all 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
       }}
       backgroundColor={bgColor}
@@ -70,13 +79,22 @@ function Sponsor({ name, icon, link, level, className }) {
         opacity: 0,
         transform: "translateY(20px) translateX(-20px)",
       }}
+      order={level === "Platinum" ? -1 : 0}
+      css={isSpecialTier ? {
+        boxShadow: `0 0 20px 5px rgba(27, 57, 86, 0.2)`,
+        '&:hover': {
+          boxShadow: `0 0 25px 8px rgba(27, 57, 86, 0.3)`,
+        }
+      } : undefined}
     >
       <Badge
         position="absolute"
         top="2"
         right="2"
         colorScheme={
-          level === "Diamond"
+          level === "Platinum"
+            ? "blue"
+            : level === "Diamond"
             ? "blue"
             : level === "Gold"
             ? "yellow"
@@ -87,14 +105,15 @@ function Sponsor({ name, icon, link, level, className }) {
         borderRadius="md"
         px="2"
         py="1"
-        fontSize="0.8em"
+        fontSize={isSpecialTier ? "1em" : "0.8em"}
         textTransform="uppercase"
         zIndex="2"
+        bg={level === "Platinum" ? "#1b3956" : undefined}
+        color={level === "Platinum" ? "white" : undefined}
       >
         {level}
       </Badge>
 
-      {/* Main content container */}
       <Flex
         direction="column"
         w="full"
@@ -103,7 +122,6 @@ function Sponsor({ name, icon, link, level, className }) {
         align="center"
         position="relative"
       >
-        {/* Image container with dimming effect */}
         <Flex
           justify="center"
           align="center"
@@ -115,16 +133,17 @@ function Sponsor({ name, icon, link, level, className }) {
             opacity: 0.15
           }}
         >
-          <Image 
-            src={icon} 
-            alt={name} 
+          <Image
+            src={icon}
+            alt={name}
             maxH="250px"
-            maxW="80%"
+            maxW={isSpecialTier ? "60%" : "80%"}
             objectFit="contain"
+            onError={(e) => {
+              console.error(`Failed to load image for ${name}`);
+            }}
           />
         </Flex>
-
-        {/* Hover overlay with centered text */}
         <Flex
           position="absolute"
           top="0"
@@ -142,7 +161,7 @@ function Sponsor({ name, icon, link, level, className }) {
         >
           <Heading
             as="h3"
-            size="lg"
+            size={isSpecialTier ? "xl" : "lg"}
             textAlign="center"
             color={textColor}
             px="4"
@@ -157,6 +176,18 @@ function Sponsor({ name, icon, link, level, className }) {
 
 const sponsorData = [
   {
+    name: "Domino's Pizza",
+    icon: dominos.src,
+    link: "https://www.dominos.ca/",
+    level: "Platinum",
+  },
+  {
+    name: "Mary Brown's Chicken",
+    icon: 'https://marybrowns.com/wp-content/uploads/email-logo.png',
+    link: "https://marybrowns.com/",
+    level: "Platinum",
+  },
+  {
     name: "Siemens",
     icon: siemens.src,
     link: "https://www.siemens.com/global/en.html",
@@ -168,12 +199,7 @@ const sponsorData = [
     link: "https://www.queensu.ca/",
     level: "Diamond",
   },
-  {
-    name: "Domino's Pizza",
-    icon: dominos.src,
-    link: "https://www.dominos.ca/",
-    level: "Diamond",
-  },
+
   {
     name: "Hatch",
     icon: "https://cna.ca/wp-content/uploads/2018/11/Hatch_Logo_Colour_RGB.png",
@@ -184,6 +210,12 @@ const sponsorData = [
     name: "Deloitte",
     icon: "https://energycouncil.com/wp-content/uploads/Deloitte.png",
     link: "https://www2.deloitte.com",
+    level: "Diamond",
+  },
+  {
+    name: "Ontario Tech University",
+    icon: otu.src,
+    link: "https://ontariotechu.ca/",
     level: "Diamond",
   },
   {
@@ -224,7 +256,7 @@ const sponsorData = [
   },
   {
     name: "Town of Oakville",
-    icon:townofoakville.src,
+    icon: townofoakville.src,
     link: "https://www.oakville.ca/",
     level: "Gold",
   },
@@ -278,7 +310,7 @@ const sponsorData = [
   },
 ];
 
-const Sponsors = (args) => {
+const Sponsors = ({ id }) => {
   useEffect(() => {
     // Heading animation
     gsap.from(".sponsorsHeading", {
@@ -297,7 +329,6 @@ const Sponsors = (args) => {
       (entries) => {
         entries.forEach((entry, index) => {
           if (entry.isIntersecting) {
-            // Add stagger effect based on index
             setTimeout(() => {
               entry.target.style.opacity = "1";
               entry.target.style.transform = "translateY(0) translateX(0)";
@@ -336,7 +367,7 @@ const Sponsors = (args) => {
       mt={{ base: "50px", lg: "24" }}
       minW="full"
       textAlign="center"
-      id={args.id}
+      id={id}
     >
       <div className="sponsorsHeading">
         <Heading fontSize={{ base: "1.5rem", lg: "3rem" }} mb="4">
@@ -366,6 +397,12 @@ const Sponsors = (args) => {
           p="8"
           columns={{ base: 1, md: 2, lg: 3, xl: 4 }}
           spacing="6"
+          templateColumns={{
+            base: "1fr",
+            md: "repeat(2, 1fr)",
+            lg: "repeat(3, 1fr)",
+            xl: "repeat(4, 1fr)"
+          }}
         >
           {sponsorData.map((sponsor, i) => (
             <Sponsor key={i} {...sponsor} className="sponsorCard" />
