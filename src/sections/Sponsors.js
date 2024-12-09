@@ -1,4 +1,5 @@
-import React, { useEffect, useRef } from 'react';
+// Sponsors.js
+import React, { useEffect } from 'react';
 import {
   Box,
   Button,
@@ -34,6 +35,7 @@ import otu from "./img/otu.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
+// Sponsor Component
 function Sponsor({ name, icon, link, level, className }) {
   const borderColors = {
     Platinum: "#1b3956",
@@ -48,18 +50,18 @@ function Sponsor({ name, icon, link, level, className }) {
   const hoverBgColor = useColorModeValue("gray.300", "gray.600");
   const textColor = useColorModeValue("gray.700", "gray.200");
 
-  // Special styling for Platinum sponsors
-  const isSpecialTier = level === "Platinum";
-  const scale = isSpecialTier ? "scale(1.02)" : "scale(1)";
-  
+  // Determine if the sponsor is a Platinum tier
+  const isPlatinum = level === "Platinum";
+  const scale = isPlatinum ? "scale(1.02)" : "scale(1)";
+
   return (
     <Flex
       as="a"
       href={link}
       className={className}
-      boxShadow={isSpecialTier ? "2xl" : "lg"}
+      boxShadow={isPlatinum ? "2xl" : "lg"}
       role="group"
-      gridColumn={isSpecialTier ? "span 2" : "auto"}
+      gridColumn={{ base: "auto", md: isPlatinum ? "span 2" : "auto" }}
       _hover={{
         boxShadow: "2xl",
         transform: `translateY(-10px) ${scale}`,
@@ -79,13 +81,17 @@ function Sponsor({ name, icon, link, level, className }) {
         opacity: 0,
         transform: "translateY(20px) translateX(-20px)",
       }}
-      order={level === "Platinum" ? -1 : 0}
-      css={isSpecialTier ? {
-        boxShadow: `0 0 20px 5px rgba(27, 57, 86, 0.2)`,
-        '&:hover': {
-          boxShadow: `0 0 25px 8px rgba(27, 57, 86, 0.3)`,
-        }
-      } : undefined}
+      order={isPlatinum ? -1 : 0}
+      css={
+        isPlatinum
+          ? {
+              boxShadow: `0 0 20px 5px rgba(27, 57, 86, 0.2)`,
+              '&:hover': {
+                boxShadow: `0 0 25px 8px rgba(27, 57, 86, 0.3)`,
+              },
+            }
+          : undefined
+      }
     >
       <Badge
         position="absolute"
@@ -105,11 +111,11 @@ function Sponsor({ name, icon, link, level, className }) {
         borderRadius="md"
         px="2"
         py="1"
-        fontSize={isSpecialTier ? "1em" : "0.8em"}
+        fontSize={isPlatinum ? "1em" : "0.8em"}
         textTransform="uppercase"
         zIndex="2"
-        bg={level === "Platinum" ? "#1b3956" : undefined}
-        color={level === "Platinum" ? "white" : undefined}
+        bg={isPlatinum ? "#1b3956" : undefined}
+        color={isPlatinum ? "white" : undefined}
       >
         {level}
       </Badge>
@@ -130,14 +136,14 @@ function Sponsor({ name, icon, link, level, className }) {
           flex="1"
           transition="all 0.3s ease-in-out"
           _groupHover={{
-            opacity: 0.15
+            opacity: 0.15,
           }}
         >
           <Image
             src={icon}
             alt={name}
             maxH="250px"
-            maxW={isSpecialTier ? "60%" : "80%"}
+            maxW={isPlatinum ? "60%" : "80%"}
             objectFit="contain"
             onError={(e) => {
               console.error(`Failed to load image for ${name}`);
@@ -161,7 +167,7 @@ function Sponsor({ name, icon, link, level, className }) {
         >
           <Heading
             as="h3"
-            size={isSpecialTier ? "xl" : "lg"}
+            size={isPlatinum ? "xl" : "lg"}
             textAlign="center"
             color={textColor}
             px="4"
@@ -174,142 +180,7 @@ function Sponsor({ name, icon, link, level, className }) {
   );
 }
 
-const sponsorData = [
-  {
-    name: "Domino's Pizza",
-    icon: dominos.src,
-    link: "https://www.dominos.ca/",
-    level: "Platinum",
-  },
-  {
-    name: "Mary Brown's Chicken",
-    icon: 'https://marybrowns.com/wp-content/uploads/email-logo.png',
-    link: "https://marybrowns.com/",
-    level: "Platinum",
-  },
-  {
-    name: "Siemens",
-    icon: siemens.src,
-    link: "https://www.siemens.com/global/en.html",
-    level: "Diamond",
-  },
-  {
-    name: "Queen's University",
-    icon: queens.src,
-    link: "https://www.queensu.ca/",
-    level: "Diamond",
-  },
-
-  {
-    name: "Hatch",
-    icon: "https://cna.ca/wp-content/uploads/2018/11/Hatch_Logo_Colour_RGB.png",
-    link: "https://www.hatch.com/",
-    level: "Diamond",
-  },
-  {
-    name: "Deloitte",
-    icon: "https://energycouncil.com/wp-content/uploads/Deloitte.png",
-    link: "https://www2.deloitte.com",
-    level: "Diamond",
-  },
-  {
-    name: "Ontario Tech University",
-    icon: otu.src,
-    link: "https://ontariotechu.ca/",
-    level: "Diamond",
-  },
-  {
-    name: "University of Waterloo",
-    icon: waterloo.src,
-    link: "https://uwaterloo.ca",
-    level: "Gold",
-  },
-  {
-    name: "Generation XYZ",
-    icon: xyz.src,
-    link: "https://gen.xyz/",
-    level: "Gold",
-  },
-  {
-    name: "Toronto Metropolitan University",
-    icon: tmu.src,
-    link: "https://www.torontomu.ca/",
-    level: "Gold",
-  },
-  {
-    name: "CodeCrafters",
-    icon: "https://mintlify.s3-us-west-1.amazonaws.com/codecrafters/logo/light.svg",
-    link: "https://codecrafters.io/",
-    level: "Gold",
-  },
-  {
-    name: "1Password",
-    icon: onepass.src,
-    link: "https://1password.com",
-    level: "Gold",
-  },
-  {
-    name: "Coddy",
-    icon: coddy.src,
-    link: "https://coddy.tech/",
-    level: "Gold",
-  },
-  {
-    name: "Town of Oakville",
-    icon: townofoakville.src,
-    link: "https://www.oakville.ca/",
-    level: "Gold",
-  },
-  {
-    name: "Brock University",
-    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Brock_University_Logo_2022.svg/2560px-Brock_University_Logo_2022.svg.png",
-    link: "https://brocku.ca/",
-    level: "Silver",
-  },
-  {
-    name: "CleanShot",
-    icon: cleanshot.src,
-    link: "https://cleanshot.com/",
-    level: "Silver",
-  },
-  {
-    name: "Vue School",
-    icon: vueschool.src,
-    link: "https://vueschool.io/",
-    level: "Silver",
-  },
-  {
-    name: "Forest of Flowers",
-    icon: "https://cfa.ca/lookforafranchise/wp-content/uploads/sites/17/2021/01/ForestOfFlowers_stacked.png",
-    link: "https://www.forestofflowers.com/",
-    level: "Bronze",
-  },
-  {
-    name: "Art of Problem Solving",
-    icon: "https://assets.artofproblemsolving.com/images/aops-logo.svg",
-    link: "https://artofproblemsolving.com/",
-    level: "Bronze",
-  },
-  {
-    name: "Metro",
-    icon: metro.src,
-    link: "https://metro.ca/",
-    level: "Bronze",
-  },
-  {
-    name: "Gotcha Bubble Tea",
-    icon: gotcha.src,
-    link: "https://www.gotchabubbletea.ca/",
-    level: "Bronze",
-  },
-  {
-    name: "Bark and Fitz ",
-    icon: "https://static.wixstatic.com/media/8e068d_cf4b4f5e758541199d193b22a20a66f6~mv2.png/v1/fill/w_252,h_81,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/8e068d_cf4b4f5e758541199d193b22a20a66f6~mv2.png",
-    link: "https://www.barkandfitz.net/",
-    level: "Bronze",
-  },
-];
-
+// Sponsors Component
 const Sponsors = ({ id }) => {
   useEffect(() => {
     // Heading animation
@@ -362,6 +233,141 @@ const Sponsors = ({ id }) => {
     return () => observer.disconnect();
   }, []);
 
+  const sponsorData = [
+    {
+      name: "Domino's Pizza",
+      icon: dominos.src,
+      link: "https://www.dominos.ca/",
+      level: "Platinum",
+    },
+    {
+      name: "Mary Brown's Chicken",
+      icon: 'https://marybrowns.com/wp-content/uploads/email-logo.png',
+      link: "https://marybrowns.com/",
+      level: "Platinum",
+    },
+    {
+      name: "Siemens",
+      icon: siemens.src,
+      link: "https://www.siemens.com/global/en.html",
+      level: "Diamond",
+    },
+    {
+      name: "Queen's University",
+      icon: queens.src,
+      link: "https://www.queensu.ca/",
+      level: "Diamond",
+    },
+    {
+      name: "Hatch",
+      icon: "https://cna.ca/wp-content/uploads/2018/11/Hatch_Logo_Colour_RGB.png",
+      link: "https://www.hatch.com/",
+      level: "Diamond",
+    },
+    {
+      name: "Deloitte",
+      icon: "https://energycouncil.com/wp-content/uploads/Deloitte.png",
+      link: "https://www2.deloitte.com",
+      level: "Diamond",
+    },
+    {
+      name: "Ontario Tech University",
+      icon: otu.src,
+      link: "https://ontariotechu.ca/",
+      level: "Diamond",
+    },
+    {
+      name: "University of Waterloo",
+      icon: waterloo.src,
+      link: "https://uwaterloo.ca",
+      level: "Gold",
+    },
+    {
+      name: "Generation XYZ",
+      icon: xyz.src,
+      link: "https://gen.xyz/",
+      level: "Gold",
+    },
+    {
+      name: "Toronto Metropolitan University",
+      icon: tmu.src,
+      link: "https://www.torontomu.ca/",
+      level: "Gold",
+    },
+    {
+      name: "CodeCrafters",
+      icon: "https://mintlify.s3-us-west-1.amazonaws.com/codecrafters/logo/light.svg",
+      link: "https://codecrafters.io/",
+      level: "Gold",
+    },
+    {
+      name: "1Password",
+      icon: onepass.src,
+      link: "https://1password.com",
+      level: "Gold",
+    },
+    {
+      name: "Coddy",
+      icon: coddy.src,
+      link: "https://coddy.tech/",
+      level: "Gold",
+    },
+    {
+      name: "Town of Oakville",
+      icon: townofoakville.src,
+      link: "https://www.oakville.ca/",
+      level: "Gold",
+    },
+    {
+      name: "Brock University",
+      icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Brock_University_Logo_2022.svg/2560px-Brock_University_Logo_2022.svg.png",
+      link: "https://brocku.ca/",
+      level: "Silver",
+    },
+    {
+      name: "CleanShot",
+      icon: cleanshot.src,
+      link: "https://cleanshot.com/",
+      level: "Silver",
+    },
+    {
+      name: "Vue School",
+      icon: vueschool.src,
+      link: "https://vueschool.io/",
+      level: "Silver",
+    },
+    {
+      name: "Forest of Flowers",
+      icon: "https://cfa.ca/lookforafranchise/wp-content/uploads/sites/17/2021/01/ForestOfFlowers_stacked.png",
+      link: "https://www.forestofflowers.com/",
+      level: "Bronze",
+    },
+    {
+      name: "Art of Problem Solving",
+      icon: "https://assets.artofproblemsolving.com/images/aops-logo.svg",
+      link: "https://artofproblemsolving.com/",
+      level: "Bronze",
+    },
+    {
+      name: "Metro",
+      icon: metro.src,
+      link: "https://metro.ca/",
+      level: "Bronze",
+    },
+    {
+      name: "Gotcha Bubble Tea",
+      icon: gotcha.src,
+      link: "https://www.gotchabubbletea.ca/",
+      level: "Bronze",
+    },
+    {
+      name: "Bark and Fitz ",
+      icon: "https://static.wixstatic.com/media/8e068d_cf4b4f5e758541199d193b22a20a66f6~mv2.png/v1/fill/w_252,h_81,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/8e068d_cf4b4f5e758541199d193b22a20a66f6~mv2.png",
+      link: "https://www.barkandfitz.net/",
+      level: "Bronze",
+    },
+  ];
+
   return (
     <Container
       mt={{ base: "50px", lg: "24" }}
@@ -394,15 +400,9 @@ const Sponsors = ({ id }) => {
       </Button>
       <div className="sponsorsStack">
         <SimpleGrid
-          p="8"
+          p={{ base: "4", md: "8" }}
           columns={{ base: 1, md: 2, lg: 3, xl: 4 }}
-          spacing="6"
-          templateColumns={{
-            base: "1fr",
-            md: "repeat(2, 1fr)",
-            lg: "repeat(3, 1fr)",
-            xl: "repeat(4, 1fr)"
-          }}
+          spacing={{ base: "4", md: "6" }}
         >
           {sponsorData.map((sponsor, i) => (
             <Sponsor key={i} {...sponsor} className="sponsorCard" />
