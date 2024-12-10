@@ -247,6 +247,12 @@ const Sponsors = ({ id }) => {
       level: "Platinum",
     },
     {
+      name: "Oakville Pump and Patio",
+      icon: 'https://cdn.prod.website-files.com/5f29a20b200b8e9dbab1d470/5f7e0da408d3fa9b1f660d14_favicon-256px.png',
+      link: "https://www.theoakvillepump.com/",
+      level: "Platinum",
+    },
+    {
       name: "Siemens",
       icon: siemens.src,
       link: "https://www.siemens.com/global/en.html",
