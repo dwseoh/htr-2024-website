@@ -114,7 +114,7 @@ const FAQ = () => {
             {{
               question: "Who can register?",
               answer:
-                "Our hackathon intended for students no matter what grade or school!!",
+                "Our hackathon intended for students no matter what grade or school! However, you must secure a supervisor from your school.",
             }}
           </Question>
           <Question>
